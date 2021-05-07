@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- set the page title -->
-    <title>LemanHouse - Real Estate HTML Template</title>
+    <title>Globelgri</title>
     <!-- include google roboto font cdn link -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <!-- include the site bootstrap stylesheet -->
@@ -26,10 +26,10 @@
             <div class="bgBaseWrap">
                 <!-- pageHeader -->
                 <header id="pageHeader" class="bgWhite offsetBottom">
-                      
+
                     <!-- pageHeaderWrap -->
                     <div class="pageHeaderWrap">
-                      
+
                         <!-- headerTopBar -->
                         <div class="bgLightDark headerTopBar textLightDark">
                             <div class="container">
@@ -43,7 +43,7 @@
                                         {{ session()->get('message') }}
                                     </div>
                                     @endif
-                                    
+
                                     <div class="col-xs-6 col-sm-8 text-right">
                                         <!-- topBarPanelList -->
                                         <ul class="list-unstyled topBarPanelList">
@@ -69,7 +69,7 @@
                                         <!-- logo -->
                                         @if ($logo)
                                         <div class="logo"><a href="home.html"><img src="{{$logo}}"alt="globelgri"></a></div>
-                                        @else 
+                                        @else
                                         <div class="logo"><a href="home.html"><img src="{{asset('frontend/images/logo.png')}}"alt="globelgri"></a></div>
                                         @endif
                                     </div>
@@ -81,20 +81,20 @@
                                                         class="fi flaticon-24-hours"></i></a>
                                                 <div class="descr hidden-xs">
                                                     @if ($phone)
-    
+
                                                     <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">{{$phone}}</a></strong>
                                                      @else
                                                         <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">+111-222-333</a></strong>
                                                     @endif
-                                                    
+
                                                     @if ($email)
                                                     <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
                                                         </strong>
-                                                     
-                            
+
+
                                                         @else
                                                         <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a></strong>
- 
+
                                                         @endif
                                                 </div>
                                             </li>
@@ -104,7 +104,7 @@
                                                 <div class="descr">
                                                     @if($address)
                                                     <strong class="fwNormal elemenBlock text">{{$address}}</strong>
-                                                    
+
                                                     @else
                                                         <strong class="fwNormal elemenBlock text">PO Box 16122 Collins Street West <br>Victoria 8007 Australia</strong>
                                                     @endif
@@ -343,7 +343,7 @@
                         <div>
                             <!-- introSlide -->
                             <article class="introSlide bgCover"
-                                style="background-image: url(https://via.placeholder.com/1920x750);">
+                                style="background-image: url(https://blog.ipleaders.in/wp-content/uploads/2018/12/real_estate.jpg);">
                                 <div class="container introSlideHolder">
                                     <div class="align">
                                         <!-- introSlideCaption -->
@@ -369,7 +369,7 @@
                         <div>
                             <!-- introSlide -->
                             <article class="introSlide bgCover"
-                                style="background-image: url(https://via.placeholder.com/1920x750);">
+                                style="background-image: url(https://www.allengabelaw.com/wp-content/uploads/2019/02/Fotolia_228320141_Subscription_Monthly_M-1140x760.jpg);">
                                 <div class="container introSlideHolder">
                                     <div class="align">
                                         <!-- introSlideCaption -->
@@ -395,7 +395,7 @@
                         <div>
                             <!-- introSlide -->
                             <article class="introSlide bgCover"
-                                style="background-image: url(https://via.placeholder.com/1920x750);">
+                                style="background-image: url(https://ddclawfirm.com/wp-content/uploads/2017/11/4-Things-Real-Estate-Attorneys-Consider-Vital-1030x618.jpg);">
                                 <div class="container introSlideHolder">
                                     <div class="align">
                                         <!-- introSlideCaption -->
@@ -1303,7 +1303,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="agent-detail.html">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Veronica Green Sales Executive">
                                                     </a>
                                                 </div>
@@ -1330,7 +1330,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="agent-detail.html">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Guti Salvio Real Estate Broker">
                                                     </a>
                                                 </div>
@@ -1357,7 +1357,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="agent-detail.html">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Elenia Jesse Selling Agent">
                                                     </a>
                                                 </div>
@@ -1384,7 +1384,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="agent-detail.html">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Emmy Ramos Buying Agent">
                                                     </a>
                                                 </div>
@@ -1411,7 +1411,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="agent-detail.html">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Veronica Green Sales Executive">
                                                     </a>
                                                 </div>
@@ -1438,7 +1438,7 @@
                                             <article class="profileColumn hasOver">
                                                 <div class="aligncenter">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/260x260"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             alt="Guti Salvio Real Estate Broker">
                                                     </a>
                                                 </div>
@@ -1531,7 +1531,7 @@
                                             <article class="testimonialColumn text-center">
                                                 <div class="aligncenter roundedCircle">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/184x184"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             class="roundedCircle" alt="image description">
                                                     </a>
                                                 </div>
@@ -1548,7 +1548,7 @@
                                             <article class="testimonialColumn text-center">
                                                 <div class="aligncenter roundedCircle">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/184x184"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             class="roundedCircle" alt="image description">
                                                     </a>
                                                 </div>
@@ -1568,7 +1568,7 @@
                                             <article class="testimonialColumn text-center">
                                                 <div class="aligncenter roundedCircle">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/184x184"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             class="roundedCircle" alt="image description">
                                                     </a>
                                                 </div>
@@ -1588,7 +1588,7 @@
                                             <article class="testimonialColumn text-center">
                                                 <div class="aligncenter roundedCircle">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/184x184"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             class="roundedCircle" alt="image description">
                                                     </a>
                                                 </div>
@@ -1608,7 +1608,7 @@
                                             <article class="testimonialColumn text-center">
                                                 <div class="aligncenter roundedCircle">
                                                     <a href="#">
-                                                        <img src="https://via.placeholder.com/184x184"
+                                                        <img src="https://cdn1.iconfinder.com/data/icons/website-internet/48/website_-_male_user-512.png"
                                                             class="roundedCircle" alt="image description">
                                                     </a>
                                                 </div>
@@ -1849,14 +1849,14 @@
                                         @else
                                             <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
                                         @endif
-                                        
+
                                         <dt><i class="fi flaticon-24-hours"></i></dt>
                                         @if ($phone)
                                             <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
                                         @else
                                             <dd><a href="tel:+12463450695">+111-222-333</a></dd>
                                         @endif
-                                        
+
                                         <dt><i class="fi flaticon-mail"></i></dt>
                                         @if ($email)
                                             <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
@@ -1865,7 +1865,7 @@
                                             <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a>
                                         </dd>
                                         @endif
-                                        
+
                                     </dl>
                                 </address>
                             </div>
@@ -1987,7 +1987,7 @@
                                     <a href="{{ route('password.request') }}" class="linkForget">Forgot Password?</a>
                                     @endif
                                 </div>
-                               
+
                                 <div class="col">
                                     <p>You Can Login using your facebook Profile or Google account</p>
                                     <button type="button" class="btnSocial btnFb elemenBlock"><i
