@@ -46,7 +46,6 @@
                                 <tbody>
                                     <?php $i = 1; ?>
                                     @foreach ($agents as $row)
-                                    {{-- {{dd($row->role())}} --}}
                                     <tr>
                                         <td class="text-center">{{$i}}</td>
                                         <td class="font-w600">{{$row->name}}</td>
@@ -60,7 +59,7 @@
                                                 @endif
                                             </span></td>
                                             <td class="text-center">
-                                                {{$row->role_id}}
+                                                {{$row->role->agent_role}}
                                             </td>
                                         <td class="text-center">
                                             <a href="" type="button" class="btn btn-sm btn-info text-white"
