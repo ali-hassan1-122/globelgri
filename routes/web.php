@@ -67,6 +67,12 @@ Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function () {
     Route::get('/products', 'ProductController@index')->name('products');
 
     Route::get('product/create', 'ProductController@create')->name('product.create');
+
+    /****************************** General Setting ***************************/
+
+    Route::get('/setting', 'GeneralSetting\GeneralSettingController@create')->name('generalsetting');
+
+    Route::post('/setting/store', 'GeneralSetting\GeneralSettingController@store')->name('generalsetting.store');
 });
 
 

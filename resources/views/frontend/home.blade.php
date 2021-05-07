@@ -43,6 +43,7 @@
                                         {{ session()->get('message') }}
                                     </div>
                                     @endif
+                                    
                                     <div class="col-xs-6 col-sm-8 text-right">
                                         <!-- topBarPanelList -->
                                         <ul class="list-unstyled topBarPanelList">
@@ -55,36 +56,6 @@
                                                     <li><a href="#"><i class="fab fa-google"></i></a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <!-- topBarPanelListDropdown -->
-                                                <div class="dropdown topBarPanelListDropdown">
-                                                    <button class="dropdown-toggle buttonReset" type="button"
-                                                        id="dropdownDol" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">USD ($)<span
-                                                            class="caret"></span></button>
-                                                    <!-- dropdownDol -->
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownDol">
-                                                        <li><a href="#">USD</a></li>
-                                                        <li><a href="#">EURO</a></li>
-                                                        <li><a href="#">YTL</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <!-- topBarPanelListDropdown -->
-                                                <div class="dropdown topBarPanelListDropdown">
-                                                    <button class="dropdown-toggle buttonReset" type="button"
-                                                        id="dropdownLang" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">English<span
-                                                            class="caret"></span></button>
-                                                    <!-- dropdownLang -->
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownLang">
-                                                        <li><a href="#">English</a></li>
-                                                        <li><a href="#">Turkish</a></li>
-                                                        <li><a href="#">French</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -96,8 +67,11 @@
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-3">
                                         <!-- logo -->
-                                        <div class="logo"><a href="home.html"><img src="{{asset('frontend/images/logo.png')}}"
-                                                    alt="LemanHouse"></a></div>
+                                        @if ($logo)
+                                        <div class="logo"><a href="home.html"><img src="{{$logo}}"alt="globelgri"></a></div>
+                                        @else 
+                                        <div class="logo"><a href="home.html"><img src="{{asset('frontend/images/logo.png')}}"alt="globelgri"></a></div>
+                                        @endif
                                     </div>
                                     <div class="col-xs-6 col-sm-9 d-flex">
                                         <!-- headerContactList -->
@@ -106,18 +80,34 @@
                                                 <a href="tel:+12463450695" class="icn icnBubble noShrink text-info"><i
                                                         class="fi flaticon-24-hours"></i></a>
                                                 <div class="descr hidden-xs">
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="tel:+12463450695">+1 246-345-0695</a></strong>
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;</a></strong>
+                                                    @if ($phone)
+    
+                                                    <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">{{$phone}}</a></strong>
+                                                     @else
+                                                        <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">+111-222-333</a></strong>
+                                                    @endif
+                                                    
+                                                    @if ($email)
+                                                    <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
+                                                        </strong>
+                                                     
+                            
+                                                        @else
+                                                        <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a></strong>
+ 
+                                                        @endif
                                                 </div>
                                             </li>
                                             <li class="hidden-xs">
                                                 <span class="icn icnJumping text-info noShrink"><i
                                                         class="fi flaticon-pin-1"></i></span>
                                                 <div class="descr">
-                                                    <strong class="fwNormal elemenBlock text">PO Box 16122 Collins
-                                                        Street West <br>Victoria 8007 Australia</strong>
+                                                    @if($address)
+                                                    <strong class="fwNormal elemenBlock text">{{$address}}</strong>
+                                                    
+                                                    @else
+                                                        <strong class="fwNormal elemenBlock text">PO Box 16122 Collins Street West <br>Victoria 8007 Australia</strong>
+                                                    @endif
                                                 </div>
                                             </li>
                                         </ul>
@@ -162,9 +152,11 @@
                                             id="menu-title">Menu</strong>
                                         <!-- pageMainNav -->
                                         <ul class="nav navbar-nav pageMainNav pageMainNav1">
-                                            <li class="active dropdown">
-                                                <a href="#" class="dropdown-toggle">Home<span class="caret"></span></a>
-                                                <div class="frame-wrap">
+                                            <li class="active">
+                                                {{-- <li class="active dropdown"> --}}
+                                                <a href="#">Home</a>
+                                                {{-- <a href="#" class="dropdown-toggle">Home<span class="caret"></span> --}}
+                                                {{-- <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
@@ -176,13 +168,14 @@
                                                             <li><a href="home6.html">Homepage 6</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </li>
                                             <!-- remove dropdownFull class when its just regular dropdown -->
-                                            <li class="dropdown dropdownFull">
-                                                <a href="#" class="dropdown-toggle">Properties <span
-                                                        class="caret"></span></a>
-                                                <div class="frame-wrap">
+                                            <li>
+                                                <a href="#">Properties</a>
+                                                {{-- <li class="dropdown dropdownFull">
+                                                <a href="#" class="dropdown-toggle">Properties <span class="caret"></span></a> --}}
+                                                {{-- <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1 pageMainNavDropdownFull pageMainNavDropdownFull1">
@@ -270,11 +263,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle">Pages<span class="caret"></span></a>
-                                                <div class="frame-wrap">
+                                            <li>
+                                                <a href="#">Pages</a>
+                                                {{-- <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle">Pages<span class="caret"></span></a> --}}
+                                                {{-- <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
@@ -286,11 +281,13 @@
                                                             <li><a href="agent-detail.html">Agent detail</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle">Blog<span class="caret"></span></a>
-                                                <div class="frame-wrap">
+                                            <li>
+                                                {{-- <li class="dropdown"> --}}
+                                                <a href="#">Blog</a>
+                                                {{-- <a href="#" class="dropdown-toggle">Blog<span class="caret"></span></a> --}}
+                                                {{-- <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
@@ -303,7 +300,7 @@
                                                                     width</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </li>
                                             <li>
                                                 <a href="contact.html">Contact</a>
@@ -1839,18 +1836,36 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 col">
                                 <h2 class="fontNeuron fwSemi text-uppercase">LemanHouse</h2>
-                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut
-                                    dignissim cursus.</p>
+                                @if($description)
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.</p>
+                                @else
+
+                                @endif
                                 <address>
                                     <dl>
                                         <dt><i class="fi flaticon-navigation"></i></dt>
-                                        <dd>Collins Street West, Victoria 8007, Australia.</dd>
+                                        @if ($address)
+                                            <dd>{{$address}}</dd>
+                                        @else
+                                            <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
+                                        @endif
+                                        
                                         <dt><i class="fi flaticon-24-hours"></i></dt>
-                                        <dd><a href="tel:+12463450695">+1 246-345-0695</a></dd>
+                                        @if ($phone)
+                                            <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
+                                        @else
+                                            <dd><a href="tel:+12463450695">+111-222-333</a></dd>
+                                        @endif
+                                        
                                         <dt><i class="fi flaticon-mail"></i></dt>
-                                        <dd><a
-                                                href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;</a>
+                                        @if ($email)
+                                            <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
                                         </dd>
+                                        @else
+                                            <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a>
+                                        </dd>
+                                        @endif
+                                        
                                     </dl>
                                 </address>
                             </div>
@@ -1923,7 +1938,7 @@
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-pull-6 col-sm-6">
-                                <p>2018 <a href="#">LemanHouse</a> - All rights reserved</p>
+                                <p>2021 <a href="#">globelgri</a> - All rights reserved</p>
                             </div>
                         </div>
                     </div>
