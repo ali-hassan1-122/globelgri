@@ -58,7 +58,7 @@
                   <div class="form-group">
                   <label>Role</label>
                   <select class="form-control" name="agent_role" style="width: 100%;" autocomplete="off">
-                    <option selected="selected">{{$user->role}}</option>
+                    <option selected="selected">{{$user->role->agent_role}}</option>
                     @foreach ($roles as $row)
                         <option>{{$row->agent_role}}</option>
                     @endforeach
