@@ -1837,9 +1837,9 @@
                             <div class="col-xs-12 col-sm-4 col">
                                 <h2 class="fontNeuron fwSemi text-uppercase">LemanHouse</h2>
                                 @if($description)
-                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.</p>
+                                <p>{{$description}}</p>
                                 @else
-
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.</p>
                                 @endif
                                 <address>
                                     <dl>
