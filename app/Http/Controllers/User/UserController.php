@@ -30,32 +30,33 @@ class UserController extends Controller
 
     public function profileupdate(Request $request)
     {
-        $this->validate($request, [
-            'name' => 'required|min:3|max:50',
-            'password' => 'required|confirmed|min:6',
-        ]);
-
-        $id = $request->id;
-        $profile = User::find($id);
-        $profile->password = Hash::make($request->password);
-        $profile->name = $request->name;
-        if ($request->hasfile('image')) {
-            if (!empty($profile->image)) {
-                $image_path = $profile->image;
-                unlink($image_path);
+        if ($request->ajax()) {
+            $this->validate($request, [
+                'name' => 'required|min:3|max:50',
+                'password' => 'required|confirmed|min:6',
+            ]);
+            $id = $request->id;
+            $profile = User::find($id);
+            $profile->password = Hash::make($request->password);
+            $profile->name = $request->name;
+            $profile->phone = $request->phone;
+            $profile->about = $request->about;
+            if ($request->hasfile('image')) {
+                if (!empty($profile->image)) {
+                    $image_path = $profile->image;
+                    unlink($image_path);
+                }
+                $image = $request->file('image');
+                $name = time() . 'profile' . '.' . $image->getClientOriginalExtension();
+                $destinationPath = 'profile_images/';
+                $image->move($destinationPath, $name);
+                $profile->image = 'profile_images/' . $name;
             }
-            $image = $request->file('image');
-            $name = time() . 'profile' . '.' . $image->getClientOriginalExtension();
-            $destinationPath = 'profile_images/';
-            $image->move($destinationPath, $name);
-            $profile->image = 'profile_images/' . $name;
-        }
 
-        $profile->save();
-        $notification = array(
-            'messege' => 'Profile Updated Successfully!',
-            'alert-type' => 'success'
-        );
-        return Redirect()->back()->with($notification);
+            $profile->update();
+            return response()->json([
+                'success' => 'Profile Updated Successfully!',
+            ]);
+        }
     }
 }

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\User;
 use App\GeneralSetting;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class FrontEndController extends Controller
 {
@@ -19,6 +20,10 @@ class FrontEndController extends Controller
         $address = '';
         $description = '';
         $logo = '';
+        $image = '';
+        $agent_name = '';
+        $role = '';
+        $agents = User::all();
         $setting = GeneralSetting::get();
         foreach ($setting as $row) {
             $phone = $row->phone;
@@ -27,6 +32,14 @@ class FrontEndController extends Controller
             $description = $row->description;
             $logo = $row->logo;
         }
-        return view('frontend.home')->with(['phone' => $phone, 'email' => $email, 'address' => $address, 'description' => $description, 'logo' => $logo]);
+        return view('frontend.home', compact('agents'))->with([
+            'phone' => $phone,
+            'email' => $email,
+            'address' => $address,
+            'description' => $description,
+            'logo' => $logo,
+
+
+        ]);
     }
 }
