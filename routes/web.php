@@ -62,12 +62,6 @@ Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function () {
 
 
 
-    /****************************** Products ***************************/
-
-    Route::get('/products', 'ProductController@index')->name('products');
-
-    Route::get('product/create', 'ProductController@create')->name('product.create');
-
     /****************************** General Setting ***************************/
 
     Route::get('/setting', 'GeneralSetting\GeneralSettingController@create')->name('generalsetting');
@@ -78,14 +72,16 @@ Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function () {
 
 /****************************** User ***************************/
 
-Route::namespace('User')->as('user.')->group(function () {
+Route::namespace('Agent')->as('agent.')->group(function () {
 
 
-    Route::get('/agent/dashboard', 'UserController@dashboard')->name('dashboard');
+    Route::get('/agent/profile', 'AgentController@dashboard')->name('dashboard');
 
-    Route::get('profile', 'UserController@profile')->name('profile');
+    Route::post('profile/update', 'AgentController@profileupdate')->name('profile.update');
 
-    Route::post('profile/update', 'UserController@profileupdate')->name('profile.update');
+    Route::post('password/update', 'AgentController@passwordupdate')->name('password.update');
+
+    Route::post('social-media/update', 'AgentController@social_media_update')->name('social_media.update');
 });
 
 /****************************** Frontend ************************/

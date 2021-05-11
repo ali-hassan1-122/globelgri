@@ -85,66 +85,6 @@
     </section>
     <!-- /.content -->
   </div>
-<!--End Header -->
-    {{-- <!-- Main Container -->
-    <main id="main-container">
-      <!-- Page Content -->
-      <div class="content">
-          <!-- Lock Forms -->
-          <!-- Mega Form -->
-          <div class="block">
-            <div class="block-header  block-header-default ">
-                  <h3 class="block-title">Edit User</h3>
-              </div>
-              <div class="block-content">
-                  <div class="row justify-content-center py-20">
-                      <div class="col-xl-6">
-                          <!-- jQuery Validation functionality is initialized in js/pages/be_forms_validation.min.js which was auto compiled from _es6/pages/be_forms_validation.js -->
-                          <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->       
-                          <form id="agentform" class="js-validation-material">
-                                @csrf
-                                <input type="hidden" name="id" value="{{$user->id}}">
-                              <div class="form-group">
-                                  <div class="form-material">
-                                      <input type="text" class="form-control" id="val-username2" name="name" value="{{$user->name}}" required>
-                                      <label for="val-username2">Username</label>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <div class="form-material">
-                                      <input type="text" class="form-control" id="val-email2" name="email"  value="{{$user->email}}" required>
-                                      <label for="val-email2">Email</label>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <div class="form-material">
-                                      <input type="password" class="form-control" id="val-password2" name="password" placeholder="Choose a safe one..">
-                                      <label for="val-password2">Password</label>
-                                  </div>
-                              </div>
-                              <div class="form-group">
-                                  <div class="form-material">
-                                      <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="..and confirm it!">
-                                      <label for="val-confirm-password2">Confirm Password</label>
-                                  </div>
-                              </div>
-                             
-                              <div class="form-group">
-                                  <button type="submit" id="update" class="btn btn-alt-primary">Update</button>
-                              </div>
-                          </form>
-                      
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- END Mega Form -->
-      </div>
-      <!-- END Page Content -->
-
-  </main>
-  <!-- END Main Container --> --}}
-
 @endsection
 
 

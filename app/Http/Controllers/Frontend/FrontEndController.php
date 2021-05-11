@@ -15,31 +15,8 @@ class FrontEndController extends Controller
     }
     public function index()
     {
-        $phone = '';
-        $email = '';
-        $address = '';
-        $description = '';
-        $logo = '';
-        $image = '';
-        $agent_name = '';
-        $role = '';
+
         $agents = User::all();
-        $setting = GeneralSetting::get();
-        foreach ($setting as $row) {
-            $phone = $row->phone;
-            $email = $row->email;
-            $address = $row->address;
-            $description = $row->description;
-            $logo = $row->logo;
-        }
-        return view('frontend.home', compact('agents'))->with([
-            'phone' => $phone,
-            'email' => $email,
-            'address' => $address,
-            'description' => $description,
-            'logo' => $logo,
-
-
-        ]);
+        return view('frontend.home', compact('agents'));
     }
 }

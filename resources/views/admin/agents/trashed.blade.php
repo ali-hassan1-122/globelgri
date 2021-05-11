@@ -81,65 +81,6 @@
     </section>
     <!-- /.content -->
 </div>
-
-{{-- @extends('layouts.admin.layouts')
-@section('content')
-@include('layouts.admin.includes.sidebar')
-<!-- Header -->
-@include('layouts.admin.includes.header')
-<!--End Header -->
-<!-- Dynamic Table Full Pagination -->
-<div class="content mt-5">
-
-<div class="block">
-      <div class="block-header block-header-default">
-            <h3 class="block-title">Users</h3>
-            <div class="block-options">
-                  <a type="button" href="{{route('admin.adduser')}}" class="btn btn-success text-white">
-                        <i class="fa fa-plus"></i>  Add User
-                  </a>
-            </div>
-      </div>
-      <div class="block-content block-content-full">
-            <!-- DataTables functionality is initialized with .js-dataTable-full-pagination class in js/pages/be_tables_datatables.min.js which was auto compiled from _es6/pages/be_tables_datatables.js -->
-            <table class="table table-bordered table-striped table-vcenter js-dataTable-full-pagination">
-                  <thead>
-                        <tr>
-                              <th class="text-center">#</th>
-                              <th>Name</th>
-                              <th class="d-none d-sm-table-cell">Email</th>
-                              <th class="d-none d-sm-table-cell" style="width: 15%;">Access</th>
-                              <th class="text-center" style="width: 15%;">Action</th>
-                        </tr>
-                  </thead>
-                  <tbody>
-                        @foreach ($users as $user)                  
-                       <tr>
-                              <td class="text-center">{{$user->id}}</td>
-                              <td class="font-w600">{{$user->name}}</td>
-                              <td class="d-none d-sm-table-cell">{{$user->email}}</td>                         
-                              <td class="d-none d-sm-table-cell"><span class="badge badge-success">VIP</span></td>
-                              <td class="text-center">
-                              
-                                    <a class="btn btn-success btn-sm" type="button" data-toggle="tooltip" title="Restore User" href="{{ route('admin.user.recover', $user->id) }}" >
-                                          <i class="fa fa-share"></i>
-                                    </a>                           
-                                    <a href="{{route('admin.user.delete' , ['id'=>$user->id])}}"class="btn btn-sm btn-danger" data-toggle="tooltip" id="delete" title="Delete User">
-                                          <i class="fa fa-close"></i>
-                                     </a>
-                                    
-                              </td>
-                        </tr>
-                        @endforeach
-                  </tbody>
-            </table>
-      </div>
-</div>
-
-<!-- END Dynamic Table Full Pagination -->
-</div> --}}
-
-
 @endsection
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
