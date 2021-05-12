@@ -70,7 +70,7 @@ Route::namespace('Admin')->prefix('admin')->as('admin.')->group(function () {
 });
 
 
-/****************************** User ***************************/
+/****************************** agent ***************************/
 
 Route::namespace('Agent')->as('agent.')->group(function () {
 
@@ -82,6 +82,15 @@ Route::namespace('Agent')->as('agent.')->group(function () {
     Route::post('password/update', 'AgentController@passwordupdate')->name('password.update');
 
     Route::post('social-media/update', 'AgentController@social_media_update')->name('social_media.update');
+
+    // property 
+
+
+});
+
+Route::namespace('Property')->as('property.')->group(function () {
+
+    Route::get('property/create', 'PropertyController@create')->name('create');
 });
 
 /****************************** Frontend ************************/

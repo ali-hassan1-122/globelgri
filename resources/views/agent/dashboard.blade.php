@@ -263,7 +263,7 @@
                             </li>
                            
                                 <li>
-                                <a href="#">
+                                <a href="{{route('property.create')}}">
                                     <i class="fa fa-plus"></i>
                                     <span>Submit Property</span>
                                 </a>
@@ -311,9 +311,9 @@
                                             <div class="img-thumbnail  text-center" id="imagepreview">
                                                 @if(Auth::user()->image)
                                                 <img src="{{asset(Auth::user()->image)}}"
-                                                    style="height: 150px; width: 200px;" class="img-fluid" id="one">
+                                                    width="200" height="200"  alt="agent image" id="one">
                                                 @else 
-                                                <img src="https://via.placeholder.com/200x200" alt="" width="200" height="200">
+                                                <img src="https://via.placeholder.com/200x200" alt="" id="one" width="200" height="200">
                                                 
                                                 @endif
                                             </div>

@@ -345,7 +345,7 @@
                                     </ul>
                                     <!-- headerModalOpener -->
                                     @if(Auth::check())
-                                    <a href="#" class="headerModalOpener text-uppercase fontNeuron fwBold"><i
+                                    <a href="{{route('property.create')}}" class="headerModalOpener text-uppercase fontNeuron fwBold"><i
                                             class="openerIcon"></i> Submit Property</a>
                                             @else 
                                             <a  class="headerModalOpener text-uppercase fontNeuron fwBold"></a>
