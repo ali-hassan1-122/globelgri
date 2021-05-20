@@ -12,6 +12,7 @@
                     <div class="align">
                         <!-- introSlideCaption -->
                         <div class="introSlideCaption captionwithtabs">
+                            <h1 class="fontNeuron" style="text-align: center; line-height: 0.9;">Discover a place you'll love to live</h1>
                             <div class="tabSetholder bgWhite">
                                 <ul class="list-unstyled tabset">
                                     <li class="active color1">
@@ -98,6 +99,7 @@
                     <div class="align">
                         <!-- introSlideCaption -->
                         <div class="introSlideCaption captionwithtabs">
+                            <h1 class="fontNeuron" style="text-align: center; line-height: 0.9;">Discover a place you'll love to live</h1>
                             <div class="tabSetholder bgWhite">
                                 <ul class="list-unstyled tabset">
                                     <li class="active color1">
@@ -184,6 +186,7 @@
                     <div class="align">
                         <!-- introSlideCaption -->
                         <div class="introSlideCaption captionwithtabs">
+                            <h1 class="fontNeuron" style="text-align: center; line-height: 0.9;">Discover a place you'll love to live</h1>
                             <div class="tabSetholder bgWhite">
                                 <ul class="list-unstyled tabset">
                                     <li class="active color1">
@@ -489,8 +492,8 @@
         <div class="container">
             <div class="row" style="padding: 10%">
                 <div class="col-xs-12 col-sm-6  col-md-6" style="margin-left: 0">
-                    <h1 class="fontNeuron">Trulia Guides</h1>
-                    <h4>Everything you need to know <br> when you're looking to buy,rent, or sell - all in one place.
+                    <h1 class="fontNeuron" style="color: white;">Trulia Guides</h1>
+                    <h4 class="fontNeuron" style="color: white;">Everything you need to know <br> when you're looking to buy,rent, or sell - all in one place.
                     </h4>
                     <button type="button" class="btn  btnSecondary fontNeuron">See all the guides</button>
                 </div>
@@ -517,12 +520,12 @@
 
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <h1 class="fontNeuron">Buyer Guides</h1>
-                            <p>How to buy</p>
-                            <h1 class="fontNeuron">Renter Guides</h1>
-                            <p>How to rent</p>
-                            <h1 class="fontNeuron">Seller Guides</h1>
-                            <p>How to sell </p>
+                            <h1 class="fontNeuron" style="color: white;">Buyer Guides</h1>
+                            <a href=""><p style="color: white;">How to buy <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
+                            <h1 class="fontNeuron" style="color: white;">Renter Guides</h1>
+                            <a href=""><p style="color: white;">How to rent <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
+                            <h1 class="fontNeuron" style="color: white;">Seller Guides</h1>
+                            <a href=""><p style="color: white;">How to sell <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
                         </div>
                     </div>
                 </div>

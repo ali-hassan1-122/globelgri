@@ -99,6 +99,9 @@ Route::namespace('Property')->as('property.')->group(function () {
 
 Route::get('/', 'Frontend\FrontEndController@index')->name('index');
 
+Route::get('/home-for-sale', 'Frontend\FrontEndController@HomeForSale')->name('home_for_sale');
+
+
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');

@@ -19,4 +19,9 @@ class FrontEndController extends Controller
         $agents = User::all();
         return view('frontend.home', compact('agents'));
     }
+
+    public function HomeForSale()
+    {
+        return view('frontend.buy.home-for-sale');
+    }
 }

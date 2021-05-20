@@ -177,7 +177,7 @@
                                         <ul class="nav navbar-nav pageMainNav pageMainNav1">
                                             <li class="active">
                                                 {{-- <li class="active dropdown"> --}}
-                                                <a href="#">Home</a>
+                                                <a href="{{route('index')}}">Home</a>
                                                 {{-- <a href="#" class="dropdown-toggle">Home<span class="caret"></span> --}}
                                                 {{-- <div class="frame-wrap">
                                                     <div class="frame">
@@ -202,13 +202,13 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            <li><a href=""><strong>San Francisco</strong> </a>
                                                             </li>
-                                                            <li><a href="about.html">Homes for Sale</a></li>
-                                                            <li><a href="agencies.html">Open Houses</a></li>
-                                                            <li><a href="agencies-detail.html">New Homes</a></li>
-                                                            <li><a href="agent.html">Recently Soled</a></li>
-                                                            <li><a href="agent-detail.html">See Newest Listning</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Homes for Sale</a></li>
+                                                            <li><a href="#">Open Houses</a></li>
+                                                            <li><a href="#">New Homes</a></li>
+                                                            <li><a href="#">Recently Soled</a></li>
+                                                            <li><a href="#">See Newest Listning</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -221,14 +221,14 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            <li><a href=""><strong>San Francisco</strong> </a>
                                                             </li>
-                                                            <li><a href="about.html">All Rentals</a></li>
-                                                            <li><a href="agencies.html">Apartments for Rent</a></li>
-                                                            <li><a href="agencies-detail.html">Houses for Rent</a></li>
-                                                            <li><a href="agent.html">Roomes for Rent</a></li>
-                                                            <li><a href="agent-detail.html">See Newest Listning</a></li>
-                                                            <li><a href="agent-detail.html">Post Rental Listning</a>
+                                                            <li><a href="">All Rentals</a></li>
+                                                            <li><a href="">Apartments for Rent</a></li>
+                                                            <li><a href="">Houses for Rent</a></li>
+                                                            <li><a href="">Roomes for Rent</a></li>
+                                                            <li><a href="">See Newest Listning</a></li>
+                                                            <li><a href="">Post Rental Listning</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -243,17 +243,17 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            <li><a href=""><strong>San Francisco</strong> </a>
                                                             </li>
-                                                            <li><a href="404.html">Mortgage Overview </a></li>
-                                                            <li><a href="blog2.html">Get Pre-Qualified</a></li>
-                                                            <li><a href="blog-detail.html">Mortgage Rates</a></li>
-                                                            <li><a href="blog-list.html">Refinance Rates</a></li>
-                                                            <li><a href="blog-full-width.html">Mortgage Calculator</a>
+                                                            <li><a href="">Mortgage Overview </a></li>
+                                                            <li><a href="">Get Pre-Qualified</a></li>
+                                                            <li><a href="">Mortgage Rates</a></li>
+                                                            <li><a href="">Refinance Rates</a></li>
+                                                            <li><a href="">Mortgage Calculator</a>
                                                             </li>
-                                                            <li><a href="blog-list-full-width.html">Affordability
+                                                            <li><a href="">Affordability
                                                                     Calculator</a></li>
-                                                            <li><a href="blog-list-full-width.html">Refinance
+                                                            <li><a href="">Refinance
                                                                     Calculator</a></li>
                                                         </ul>
                                                     </div>
@@ -267,9 +267,15 @@
                                     <!-- UserLinksList -->
                                     @if(Auth::check())
                                     <!-- headerModalOpener -->
-                                    <a href="{{route('property.create')}}"
-                                        class="headerModalOpener text-uppercase fontNeuron fwBold"><i
-                                            class="openerIcon"></i> Submit Property</a>
+                                       <ul class="list-unstyled UserLinksList">
+                                        <li>
+                                            <a href="{{route('property.create')}}" >
+                                                <i class="fa fa-plus"></i>
+                                                <strong class="text fwNormal hidden-xs hidden-sm"> Submit Property</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="{{route('agent.dashboard')}}" class="headerModalOpener text-uppercase fontNeuron fwBold">Dashboard</a>
                                     @else
                                     <ul class="list-unstyled UserLinksList">
                                         <li>
@@ -531,13 +537,16 @@
     </div>
     </div>
     <!-- include jQuery library -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAziipzIN4zP3UtFIBC3-e6NcNfY2vIG48&callback=myMap"></script>
     <script src="{{asset('frontend/js/jquery.js')}}"></script>
     <script src="{{asset('frontend/js/plugins.js')}}"></script>
     <!-- include bootstrap JavaScript -->
     <script src="{{asset('frontend/js/bootstrap-slider.min.js')}}"></script>
     <!-- include custom JavaScript -->
     <script src="{{asset('frontend/js/jquery.main.js')}}"></script>
+    	<script type="text/javascript" src="{{asset('frontend/js/map2.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/init.js')}}"></script>
+    
 </body>
 
 </html>
