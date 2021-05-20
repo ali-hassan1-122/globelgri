@@ -91,6 +91,8 @@ Route::namespace('Agent')->as('agent.')->group(function () {
 Route::namespace('Property')->as('property.')->group(function () {
 
     Route::get('property/create', 'PropertyController@create')->name('create');
+
+    Route::post('property/store', 'PropertyController@store')->name('store');
 });
 
 /****************************** Frontend ************************/

@@ -75,6 +75,8 @@
                     <section id="content" class="container pEqual">
 
                         <form class="form-horizontal" id="multistep_form">
+                          @csrf
+                          <input type="hidden" name="agent_id" value="{{Auth::user()->id}}">
                             <fieldset id="account">
 
                                 <div class="addProperty">
@@ -120,56 +122,56 @@
                                             <div class="col-xs-12">
                                                 <div class="form-group">
                                                     <label for="itemN-15">Property Title*</label>
-                                                    <input type="text" class="form-control" placeholder="House"
+                                                    <input type="text" name="propert_title" class="form-control" placeholder="House"
                                                         id="itemN-15">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-16">Price</label>
-                                                    <input type="text" class="form-control" placeholder="$158"
+                                                    <input type="text" name="price" class="form-control" placeholder="$158"
                                                         id="itemN-16">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-17">Price Postfix</label>
-                                                    <input type="text" class="form-control" placeholder=""
+                                                    <input type="text" name="price_postfix" class="form-control" placeholder=""
                                                         id="itemN-17">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-4">
                                                 <div class="form-group">
                                                     <label for="itemN-18">Bedrooms</label>
-                                                    <input type="number" class="form-control" placeholder="5" min="0"
+                                                    <input type="number" name="bedroom" class="form-control" placeholder="5" min="0"
                                                         max="9999" id="itemN-18">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-4">
                                                 <div class="form-group">
                                                     <label for="itemN-19">Bathrooms</label>
-                                                    <input type="number" class="form-control" placeholder="3" min="0"
+                                                    <input type="number" name="bathroom" class="form-control" placeholder="3" min="0"
                                                         max="9999" id="itemN-19">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-4">
                                                 <div class="form-group">
                                                     <label for="itemN-20">Garages</label>
-                                                    <input type="number" class="form-control" placeholder="8" min="0"
+                                                    <input type="number" name="garages" class="form-control" placeholder="8" min="0"
                                                         max="9999" id="itemN-20">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-21">Area</label>
-                                                    <input type="text" class="form-control" placeholder="1500"
+                                                    <input type="text" name="area" class="form-control" placeholder="1500"
                                                         id="itemN-21">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-22">Area Postfix</label>
-                                                    <input type="text" class="form-control" placeholder=""
+                                                    <input type="text" name="area_postfix" class="form-control" placeholder=""
                                                         id="itemN-22">
                                                 </div>
                                             </div>
@@ -177,11 +179,11 @@
                                                 <div class="form-group">
                                                     <label for="itemN-23">Property Type</label>
                                                     <select data-placeholder="Select Option" class="chosen-select"
-                                                        id="itemN-23">
+                                                        id="itemN-23" name="property_type">
                                                         <option value="1">All Areas</option>
                                                         <option value="2">All Areas</option>
-                                                        <option value="2">All Areas</option>
-                                                        <option value="2">All Areas</option>
+                                                        <option value="3">All Areas</option>
+                                                        <option value="4">All Areas</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -189,11 +191,11 @@
                                                 <div class="form-group">
                                                     <label for="itemN-24">Property Status</label>
                                                     <select data-placeholder="Select Option" class="chosen-select"
-                                                        id="itemN-24">
+                                                        id="itemN-24" name="propert_status">
                                                         <option value="1">All Areas</option>
                                                         <option value="2">All Areas</option>
-                                                        <option value="2">All Areas</option>
-                                                        <option value="2">All Areas</option>
+                                                        <option value="3">All Areas</option>
+                                                        <option value="4">All Areas</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -201,7 +203,7 @@
                                                 <div class="form-group">
                                                     <label for="itemN-25">Description</label>
                                                     <textarea class="form-control" id="itemN-25"
-                                                        placeholder=""></textarea>
+                                                        placeholder="" name="description"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,47 +274,20 @@
                                                 <div class="image imageLoaded">
                                                     <img src="https://via.placeholder.com/200x150" alt="" width="200"
                                                         height="150">
+                                                        <input type="file" name="gallery_photos[]" class="mt-3" multiple>
                                                     <div class="btnsArea">
                                                         <a href="#" class="link close"><i
                                                                 class="fa fa-window-close"></i></a>
                                                         <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
                                                     </div>
-                                                    <a href="#" class="text">
-                                                        <span>
-                                                            <i class="fi flaticon-cloud-computing"></i>
-                                                            <span>Upload Image</span>
-                                                        </span>
-                                                    </a>
+                                                        <a href="#" class="text">
+                                                            <span>
+                                                                <i class="fi flaticon-cloud-computing"></i>
+                                                                <span>Upload Image</span>
+                                                            </span>
+                                                        </a>
                                                 </div>
-                                                <div class="image imageLoaded">
-                                                    <img src="https://via.placeholder.com/200x150" alt="" width="200"
-                                                        height="150">
-                                                    <div class="btnsArea">
-                                                        <a href="#" class="link close"><i
-                                                                class="fa fa-window-close"></i></a>
-                                                        <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
-                                                    </div>
-                                                    <a href="#" class="text">
-                                                        <span>
-                                                            <i class="fi flaticon-cloud-computing"></i>
-                                                            <span>Upload Image</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="image imageLoaded">
-                                                    <img src="https://via.placeholder.com/200x150" alt="" width="200"
-                                                        height="150">
-                                                    <div class="btnsArea">
-                                                        <a href="#" class="link close"><i
-                                                                class="fa fa-window-close"></i></a>
-                                                    </div>
-                                                    <a href="#" class="text">
-                                                        <span>
-                                                            <i class="fi flaticon-cloud-computing"></i>
-                                                            <span>Upload Image</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
+                                             
                                                 <div class="image">
                                                     <div class="btnsArea">
                                                         <a href="#" class="link close"><i
@@ -328,7 +303,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="galleryUploads">
+                                        {{-- <div class="galleryUploads">
                                             <div class="titleArea">
                                                 <span class="title">File Documents</span>
                                                 <p>*i.e Energy Performance Certificate - EPC. Allowd extensions are txt,
@@ -401,7 +376,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="galleryUploads">
                                             <div class="titleArea">
                                                 <span class="title">Floor Plans</span>
@@ -410,6 +385,7 @@
                                                 <div class="image imageLoaded">
                                                     <img src="https://via.placeholder.com/200x150" alt="" width="200"
                                                         height="150">
+                                                        <input type="file" name="plane_photos[]" class="mt-3" multiple>
                                                     <div class="btnsArea">
                                                         <a href="#" class="link close"><i
                                                                 class="fa fa-window-close"></i></a>
@@ -442,7 +418,7 @@
                                                 <div class="form-group">
                                                     <label for="itemN-26">Property Video</label>
                                                     <p>*Put URL from video sites like youtube, vimeo etc</p>
-                                                    <input type="text" class="form-control" placeholder="Video URL"
+                                                    <input type="text" name="property_video_url" class="form-control" placeholder="Video URL"
                                                         id="itemN-26">
                                                 </div>
                                             </div>
@@ -450,7 +426,7 @@
                                                 <div class="form-group">
                                                     <label for="itemN-27">360° Virtual Tour</label>
                                                     <textarea class="form-control" placeholder="Embed Iframe code"
-                                                        id="itemN-27"></textarea>
+                                                        id="itemN-27" name="virtual_tour"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -513,8 +489,8 @@
                                             <div class="col-xs-12">
                                                 <div class="form-group">
                                                     <label>Country</label>
-                                                    <select data-placeholder="Select Option" class="chosen-select">
-                                                        <option value="1">Turkey</option>
+                                                    <select data-placeholder="Select Option" class="chosen-select" name="country">
+                                                        <option value="Turkey">Turkey</option>
                                                         <option value="2">All Areas</option>
                                                         <option value="2">All Areas</option>
                                                         <option value="2">All Areas</option>
@@ -524,7 +500,7 @@
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label>State</label>
-                                                    <select data-placeholder="Choose..." class="chosen-select">
+                                                    <select data-placeholder="Choose..." class="chosen-select" name="state">
                                                         <option value="1">State</option>
                                                         <option value="2">All Areas</option>
                                                         <option value="2">All Areas</option>
@@ -535,7 +511,7 @@
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label>City</label>
-                                                    <select data-placeholder="Select City" class="chosen-select">
+                                                    <select data-placeholder="Select City" class="chosen-select" name="city">
                                                         <option value="1">City</option>
                                                         <option value="2">All Areas</option>
                                                         <option value="2">All Areas</option>
@@ -548,7 +524,7 @@
                                                     <label for="item-map">Address / Location</label>
                                                     <div class="input-group">
                                                         <input type="text" class="form-control" id="item-map"
-                                                            placeholder="Istanbul / Turkey">
+                                                            placeholder="Istanbul / Turkey" name="location">
                                                         <button type="button"
                                                             class="btn btnSecondary buttonL fontNeuron">Find On
                                                             Map</button>
@@ -608,8 +584,7 @@
                                     <div class="formContent">
 
                                         <header class="contentHead">
-                                            <h2 class="fontNeuron">Amenities <a href="#"
-                                                    class="selection">Select/Unselect all</a></h2>
+                                            <h2 class="fontNeuron">Amenities</h2>
                                             <div class="btnArea">
                                                 <a type="button" id="previous4" class="btn btn-lighter previous"><i
                                                         class="fi flaticon-arrows-1"></i> Back</a>
@@ -620,168 +595,168 @@
                                         <ul class="list-unstyled checkList text-primary">
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="air_conditioning">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Air conditioning</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="heating">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Heating</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="air_conditioning1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Air conditioning</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="heating1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Heating</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" checked>
+                                                    <input type="checkbox" class="customFormInputReset"  name="balcony">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Balcony</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" checked>
+                                                    <input type="checkbox" class="customFormInputReset"  name="internet">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Internet</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" checked>
+                                                    <input type="checkbox" class="customFormInputReset"  name="balcony1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Balcony</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" checked>
+                                                    <input type="checkbox" class="customFormInputReset"  name="internet1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Internet</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="bedding1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Bedding</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="microwave">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Microwave</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="bedding2">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Bedding</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="microwave1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Microwave</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="cable_tv_1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Cable TV</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="oven">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Oven</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="cable_tv_2">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Cable TV</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="oven_1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Oven</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="coffee_pot">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Coffee Pot</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="toaster">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Toaster</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="coffee_pot_1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Coffee Pot</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="toaster_1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Toaster</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="dashwasher">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Dishwasher</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="parking">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Parking</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="dashwasher1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Dishwasher</span>
                                                 </label>
                                             </li>
                                             <li>
                                                 <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset">
+                                                    <input type="checkbox" class="customFormInputReset" name="parking1">
                                                     <span class="fakeCheckbox"></span>
                                                     <span class="fakeLabel">Parking</span>
                                                 </label>
@@ -829,14 +804,14 @@
                                         </li>
                                     </ol>
                                     <div class="formContent">
-                                        <form>
+                                 
                                             <header class="contentHead">
                                                 <h2 class="fontNeuron">Private Notes</h2>
                                             </header>
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <div class="form-group">
-                                                        <textarea class="form-control"></textarea>
+                                                        <textarea class="form-control" name="private_note"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -846,7 +821,7 @@
                                                 <button type="submit" class="btn btnDark">Submit Property <i
                                                         class="fi flaticon-arrows"></i></button>
                                             </div>
-                                        </form>
+                                        
                                     </div>
                                 </div>
                             </fieldset>
@@ -1010,6 +985,7 @@
     <!-- include custom JavaScript -->
     <script src="{{asset('frontend/js/jquery.main.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/init.js')}}"></script>
+    
     <script>
         $(document).ready(function () {
             var form_count = 1,
@@ -1036,6 +1012,36 @@
 
         });
 
+    </script>
+
+    <script>
+      // add property
+         $('#multistep_form').on('submit', function (event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            console.log(formData);
+            $.ajax({
+
+                url: '{{route("property.store")}}',
+                method: 'post',
+                processData: false,
+                contentType: false,
+                data: formData,
+                beforeSend: function () {
+                    $('#add').attr('disabled', 'disabled');
+                },
+                success: function (data) {
+                    if (data.success) {
+                        $('#result').html('<div class="alert alert-success">' + data
+                            .success + '</div>');
+                    } else {
+                        $('#result').html('<div class="alert alert-danger">' + data.error +
+                            '</div>');
+                    }
+
+                }
+            });
+        });
     </script>
 </body>
 

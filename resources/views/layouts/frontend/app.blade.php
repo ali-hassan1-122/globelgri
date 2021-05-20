@@ -53,7 +53,7 @@
                                         <time datetime="2011-01-12" class="TopBarTime">Mon - Sat: 08.00 AM - 18.00
                                             PM</time>
                                     </div>
-                                      @if(session()->has('message'))
+                                    @if(session()->has('message'))
                                     <div class="alert alert-danger">
                                         {{ session()->get('message') }}
                                     </div>
@@ -83,9 +83,12 @@
                                     <div class="col-xs-6 col-sm-3">
                                         <!-- logo -->
                                         @if ($logo)
-                                        <div class="logo"><a href="home.html"><img src="{{$logo}}"alt="globelgri"></a></div>
+                                        <div class="logo"><a href="home.html"><img src="{{$logo}}" alt="globelgri"></a>
+                                        </div>
                                         @else
-                                        <div class="logo"><a href="home.html"><img src="{{asset('frontend/images/logo.png')}}"alt="globelgri"></a></div>
+                                        <div class="logo"><a href="home.html"><img
+                                                    src="{{asset('frontend/images/logo.png')}}" alt="globelgri"></a>
+                                        </div>
                                         @endif
                                     </div>
                                     <div class="col-xs-6 col-sm-9 d-flex">
@@ -97,20 +100,24 @@
                                                 <div class="descr hidden-xs">
                                                     @if ($phone)
 
-                                                    <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">{{$phone}}</a></strong>
-                                                     @else
-                                                        <strong class="fwNormal elemenBlock text"><a href="tel:+12463450695">+111-222-333</a></strong>
+                                                    <strong class="fwNormal elemenBlock text"><a
+                                                            href="tel:+12463450695">{{$phone}}</a></strong>
+                                                    @else
+                                                    <strong class="fwNormal elemenBlock text"><a
+                                                            href="tel:+12463450695">+111-222-333</a></strong>
                                                     @endif
 
                                                     @if ($email)
-                                                    <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
-                                                        </strong>
+                                                    <strong class="fwNormal elemenBlock text"><a
+                                                            href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
+                                                    </strong>
 
 
-                                                        @else
-                                                        <strong class="fwNormal elemenBlock text"><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a></strong>
+                                                    @else
+                                                    <strong class="fwNormal elemenBlock text"><a
+                                                            href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a></strong>
 
-                                                        @endif
+                                                    @endif
                                                 </div>
                                             </li>
                                             <li class="hidden-xs">
@@ -121,7 +128,8 @@
                                                     <strong class="fwNormal elemenBlock text">{{$address}}</strong>
 
                                                     @else
-                                                        <strong class="fwNormal elemenBlock text">PO Box 16122 Collins Street West <br>Victoria 8007 Australia</strong>
+                                                    <strong class="fwNormal elemenBlock text">PO Box 16122 Collins
+                                                        Street West <br>Victoria 8007 Australia</strong>
                                                     @endif
                                                 </div>
                                             </li>
@@ -187,138 +195,69 @@
                                             </li>
                                             <!-- remove dropdownFull class when its just regular dropdown -->
                                             <li>
-                                                <a href="#">Properties</a>
-                                                {{-- <li class="dropdown dropdownFull">
-                                                <a href="#" class="dropdown-toggle">Properties <span class="caret"></span></a> --}}
-                                                {{-- <div class="frame-wrap">
+
+                                            <li class="dropdown dropdownFull">
+                                                <a href="#" class="dropdown-toggle">Buy <span class="caret"></span></a>
+                                                <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
-                                                            class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1 pageMainNavDropdownFull pageMainNavDropdownFull1">
-                                                            <li>
-                                                                <div class="dropdownColumnsHolder">
-                                                                    <div class="dropdownCol">
-                                                                        <strong
-                                                                            class="fontNeuron elemenBlock dropdownTitle text-uppercase hidden-xs">Properties</strong>
-                                                                        <ul class="list-unstyled dropdownColList">
-                                                                            <li><a href="properties-grid.html">Properties
-                                                                                    Grid</a></li>
-                                                                            <li><a href="properties-list.html">Properties
-                                                                                    List</a></li>
-                                                                            <li><a href="properties-map-grid.html">Properties
-                                                                                    Map Grid</a></li>
-                                                                            <li><a href="properties-map-list.html">Properties
-                                                                                    Map List</a></li>
-                                                                            <li><a
-                                                                                    href="properties-grid-left-search.html">Properties
-                                                                                    Grid Left</a></li>
-                                                                            <li><a href="properties-half-map-grid.html">Properties
-                                                                                    Half Map Grid</a></li>
-                                                                            <li><a href="properties-half-map-list.html">Properties
-                                                                                    Half Map List</a></li>
-                                                                            <li><a
-                                                                                    href="properties-full-width-list.html">Properties
-                                                                                    Full Width List</a></li>
-                                                                            <li><a
-                                                                                    href="properties-full-width-grid.html">Properties
-                                                                                    Full Width Grid</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="dropdownCol">
-                                                                        <strong
-                                                                            class="fontNeuron elemenBlock dropdownTitle text-uppercase hidden-xs">Properties
-                                                                            Single</strong>
-                                                                        <ul class="list-unstyled dropdownColList">
-                                                                            <li><a href="properties-single1.html">Properties
-                                                                                    Single 1</a></li>
-                                                                            <li><a href="properties-single2.html">Properties
-                                                                                    Single 2</a></li>
-                                                                            <li><a href="properties-single3.html">Properties
-                                                                                    Single 3</a></li>
-                                                                            <li><a href="properties-single4.html">Properties
-                                                                                    Single 4</a></li>
-                                                                            <li><a href="properties-single5.html">Properties
-                                                                                    Single 5</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="dropdownCol">
-                                                                        <strong
-                                                                            class="fontNeuron elemenBlock dropdownTitle text-uppercase hidden-xs">New
-                                                                            Properties</strong>
-                                                                        <ul class="list-unstyled dropdownColList">
-                                                                            <li><a href="add-step-01.html">Add step
-                                                                                    01</a></li>
-                                                                            <li><a href="add-step-02.html">Add step
-                                                                                    02</a></li>
-                                                                            <li><a href="add-step-03.html">Add step
-                                                                                    03</a></li>
-                                                                            <li><a href="add-step-04.html">Add step
-                                                                                    04</a></li>
-                                                                            <li><a href="add-step-05.html">Add step
-                                                                                    05</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <div class="dropdownCol">
-                                                                        <strong
-                                                                            class="fontNeuron elemenBlock dropdownTitle text-uppercase hidden-xs">Other
-                                                                            Pages</strong>
-                                                                        <ul class="list-unstyled dropdownColList">
-                                                                            <li><a href="user-profile.html">User
-                                                                                    Profile</a></li>
-                                                                            <li><a href="my-properties.html">My
-                                                                                    Properties</a></li>
-                                                                            <li><a href="favourite-properties.html">Favourite
-                                                                                    Properties</a></li>
-                                                                            <li><a href="membership.html">Membership</a>
-                                                                            </li>
-                                                                            <li><a href="properties-faqs.html">Properties
-                                                                                    Faqs</a></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
+                                                            class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
+                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            </li>
+                                                            <li><a href="about.html">Homes for Sale</a></li>
+                                                            <li><a href="agencies.html">Open Houses</a></li>
+                                                            <li><a href="agencies-detail.html">New Homes</a></li>
+                                                            <li><a href="agent.html">Recently Soled</a></li>
+                                                            <li><a href="agent-detail.html">See Newest Listning</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle">Rent<span class="caret"></span></a>
+                                                <div class="frame-wrap">
+                                                    <div class="frame">
+                                                        <ul
+                                                            class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
+                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            </li>
+                                                            <li><a href="about.html">All Rentals</a></li>
+                                                            <li><a href="agencies.html">Apartments for Rent</a></li>
+                                                            <li><a href="agencies-detail.html">Houses for Rent</a></li>
+                                                            <li><a href="agent.html">Roomes for Rent</a></li>
+                                                            <li><a href="agent-detail.html">See Newest Listning</a></li>
+                                                            <li><a href="agent-detail.html">Post Rental Listning</a>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                </div> --}}
+                                                </div>
                                             </li>
                                             <li>
-                                                <a href="#">Pages</a>
-                                                {{-- <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle">Pages<span class="caret"></span></a> --}}
-                                                {{-- <div class="frame-wrap">
+                                            <li class="dropdown">
+
+                                                <a href="#" class="dropdown-toggle">Mortgage<span
+                                                        class="caret"></span></a>
+                                                <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="404.html">404</a></li>
-                                                            <li><a href="about.html">About</a></li>
-                                                            <li><a href="agencies.html">Agencies</a></li>
-                                                            <li><a href="agencies-detail.html">Agencies detail</a></li>
-                                                            <li><a href="agent.html">Agent</a></li>
-                                                            <li><a href="agent-detail.html">Agent detail</a></li>
+                                                            <li><a href="404.html"><strong>San Francisco</strong> </a>
+                                                            </li>
+                                                            <li><a href="404.html">Mortgage Overview </a></li>
+                                                            <li><a href="blog2.html">Get Pre-Qualified</a></li>
+                                                            <li><a href="blog-detail.html">Mortgage Rates</a></li>
+                                                            <li><a href="blog-list.html">Refinance Rates</a></li>
+                                                            <li><a href="blog-full-width.html">Mortgage Calculator</a>
+                                                            </li>
+                                                            <li><a href="blog-list-full-width.html">Affordability
+                                                                    Calculator</a></li>
+                                                            <li><a href="blog-list-full-width.html">Refinance
+                                                                    Calculator</a></li>
                                                         </ul>
                                                     </div>
-                                                </div> --}}
-                                            </li>
-                                            <li>
-                                                {{-- <li class="dropdown"> --}}
-                                                <a href="#">Blog</a>
-                                                {{-- <a href="#" class="dropdown-toggle">Blog<span class="caret"></span></a> --}}
-                                                {{-- <div class="frame-wrap">
-                                                    <div class="frame">
-                                                        <ul
-                                                            class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="blog.html">Blog</a></li>
-                                                            <li><a href="blog2.html">Blog 2</a></li>
-                                                            <li><a href="blog-detail.html">Blog detail</a></li>
-                                                            <li><a href="blog-list.html">Blog list</a></li>
-                                                            <li><a href="blog-full-width.html">Blog full width</a></li>
-                                                            <li><a href="blog-list-full-width.html">Blog list full
-                                                                    width</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div> --}}
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">Contact</a>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
@@ -326,6 +265,12 @@
                                 <!-- userOptions -->
                                 <div class="userOptions">
                                     <!-- UserLinksList -->
+                                    @if(Auth::check())
+                                    <!-- headerModalOpener -->
+                                    <a href="{{route('property.create')}}"
+                                        class="headerModalOpener text-uppercase fontNeuron fwBold"><i
+                                            class="openerIcon"></i> Submit Property</a>
+                                    @else
                                     <ul class="list-unstyled UserLinksList">
                                         <li>
                                             <a href="#popup1" class="lightbox">
@@ -333,7 +278,6 @@
                                                 <strong class="text fwNormal hidden-xs hidden-sm">Login</strong>
                                             </a>
                                         </li>
-
                                         @if (Route::has('register'))
                                         <li>
                                             <a href="#popup1" class="lightbox">
@@ -343,20 +287,14 @@
                                         </li>
                                         @endif
                                     </ul>
-                                    <!-- headerModalOpener -->
-                                    @if(Auth::check())
-                                    <a href="{{route('property.create')}}" class="headerModalOpener text-uppercase fontNeuron fwBold"><i
-                                            class="openerIcon"></i> Submit Property</a>
-                                            @else 
-                                            <a  class="headerModalOpener text-uppercase fontNeuron fwBold"></a>
+                                    <a class="headerModalOpener text-uppercase fontNeuron fwBold"></a>
                                     @endif
-                                    
                                 </div>
                             </nav>
                         </div>
                     </div>
                 </header>
-              @yield('content')
+                @yield('content')
             </div>
             <!-- pageFooterBlock -->
             <div class="pageFooterBlock">
@@ -369,30 +307,33 @@
                                 @if($description)
                                 <p>{{$description}}</p>
                                 @else
-                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim cursus.</p>
+                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut
+                                    dignissim cursus.</p>
                                 @endif
                                 <address>
                                     <dl>
                                         <dt><i class="fi flaticon-navigation"></i></dt>
                                         @if ($address)
-                                            <dd>{{$address}}</dd>
+                                        <dd>{{$address}}</dd>
                                         @else
-                                            <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
+                                        <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
                                         @endif
 
                                         <dt><i class="fi flaticon-24-hours"></i></dt>
                                         @if ($phone)
-                                            <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
+                                        <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
                                         @else
-                                            <dd><a href="tel:+12463450695">+111-222-333</a></dd>
+                                        <dd><a href="tel:+12463450695">+111-222-333</a></dd>
                                         @endif
 
                                         <dt><i class="fi flaticon-mail"></i></dt>
                                         @if ($email)
-                                            <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
+                                        <dd><a
+                                                href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
                                         </dd>
                                         @else
-                                            <dd><a href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a>
+                                        <dd><a
+                                                href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a>
                                         </dd>
                                         @endif
 
@@ -536,23 +477,21 @@
                         <div class="popupColsHolder">
                             <div class="col bgWhite">
                                 <div class="form-group">
-                                    <input type="text"
-                                        class="form-control elemenBlock" id="name"
-                                        name="name" value="{{ old('name') }}" required autocomplete="name" autofocus
+                                    <input type="text" class="form-control elemenBlock" id="name" name="name"
+                                        value="{{ old('name') }}" required autocomplete="name" autofocus
                                         placeholder="Enter a username..">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password"
-                                        class="form-control elemenBlock"
-                                        name="password" required autocomplete="new-password"
-                                        placeholder="Choose a safe one..">
+                                    <input type="password" class="form-control elemenBlock" name="password" required
+                                        autocomplete="new-password" placeholder="Choose a safe one..">
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control elemenBlock" name="password_confirmation"
                                         required autocomplete="new-password" placeholder="..and confirm it!">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control elemenBlock"  name="email" value="{{ old('email') }}" required autocomplete="email"
+                                    <input type="email" class="form-control elemenBlock" name="email"
+                                        value="{{ old('email') }}" required autocomplete="email"
                                         placeholder="Your valid email..">
                                 </div>
                                 <div class="form-group">
