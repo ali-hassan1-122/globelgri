@@ -321,7 +321,7 @@
                     <h1 class="fontNeuron" style="color: white;">Globelgri Guides</h1>
                     <h4 class="fontNeuron" style="color: white;">Everything you need to know <br> when you're looking to buy,rent, or sell - all in one place.
                     </h4>
-  
+
                     <a href="{{route('home_for_sale')}}" style="font-size: 20px; background-color: #8b5925; color:white"  type="button" class="btn  text-uppercase fontNeuron">See all the guides</a>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 float-right">
@@ -387,7 +387,7 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-3">
-                <h6 style="margin-left: 15%">Explore Trulia</h6>
+                <h6 style="margin-left: 15%">Explore Globel Gri</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -424,7 +424,7 @@
                 with disabilities. We are continuously working to improve the accessibility of our web experience for
                 everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek an
                 accommodation, please let us know.</p>
-            
+
         </div>
     </div>
 

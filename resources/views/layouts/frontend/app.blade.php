@@ -56,9 +56,9 @@
                                 $logo = $row->logo;
                             }
                         ?>
-                      
+
                         <div class="container-fluid" style="background-color: #f0f9fb">
-                            
+
                             <!-- headerHolder -->
                             <div class="headerHolder" style="background-color: #f0f9fb">
                                 <div class="row">
@@ -91,7 +91,7 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            
+
                                                             <li><a href="{{route('home_for_sale')}}">Homes for Sale</a></li>
                                                             <li><a href="{{route('home_for_sale')}}">Open Houses</a></li>
                                                             <li><a href="{{route('home_for_sale')}}">New Homes</a></li>
@@ -109,7 +109,7 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                           
+
                                                             <li><a href="{{route('home_for_sale')}}">All Rentals</a></li>
                                                             <li><a href="{{route('home_for_sale')}}">Apartments for Rent</a></li>
                                                             <li><a href="{{route('home_for_sale')}}">Houses for Rent</a></li>
@@ -130,7 +130,7 @@
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                           
+
                                                             <li><a href="{{route('home_for_sale')}}">Mortgage Overview </a></li>
                                                             <li><a href="{{route('home_for_sale')}}">Get Pre-Qualified</a></li>
                                                             <li><a href="{{route('home_for_sale')}}">Mortgage Rates</a></li>
@@ -203,11 +203,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 col">
-                                <h2 class="fontNeuron fwSemi text-uppercase">LemanHouse</h2>
+                                <h2 class="fontNeuron fwSemi text-uppercase">Global Gri</h2>
                                 @if($description)
                                 <p>{{$description}}</p>
                                 @else
-                                <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities. </p>
+                                <p>Global Gri Group is committed to ensuring digital accessibility for individuals with disabilities. </p>
                                 @endif
                                 <address>
                                     <dl>
@@ -439,8 +439,8 @@
     <script src="{{asset('frontend/js/jquery.main.js')}}"></script>
     	<script type="text/javascript" src="{{asset('frontend/js/map2.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/init.js')}}"></script>
-    
-    
+
+
 </body>
 
 </html>
