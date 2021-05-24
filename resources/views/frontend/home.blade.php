@@ -7,180 +7,6 @@
         <div>
             <!-- introSlide -->
             <article class="introSlide bgCover"
-                style="background-image: url(https://blog.ipleaders.in/wp-content/uploads/2018/12/real_estate.jpg);">
-                <div class="container introSlideHolder">
-                    <div class="align">
-                        <!-- introSlideCaption -->
-                        <div class="introSlideCaption captionwithtabs">
-                            <h1 class="fontNeuron" style="text-align: center; line-height: 0.9;">Discover a place you'll love to live</h1>
-                            <div class="tabSetholder bgWhite">
-                                <ul class="list-unstyled tabset">
-                                    <li class="active color1">
-                                        <a href="#tab1-0">Buy</a>
-                                    </li>
-                                    <li class="color2">
-                                        <a href="#tab2-0">Rent</a>
-                                    </li>
-                                    <li class="color3">
-                                        <a href="#tab3-0">Sold</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="tab1-0" class="active">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div id="tab2-0" class="js-tab-hidden">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div id="tab3-0" class="js-tab-hidden">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div>
-            <!-- introSlide -->
-            <article class="introSlide bgCover"
-                style="background-image: url(https://www.allengabelaw.com/wp-content/uploads/2019/02/Fotolia_228320141_Subscription_Monthly_M-1140x760.jpg);">
-                <div class="container introSlideHolder">
-                    <div class="align">
-                        <!-- introSlideCaption -->
-                        <div class="introSlideCaption captionwithtabs">
-                            <h1 class="fontNeuron" style="text-align: center; line-height: 0.9;">Discover a place you'll love to live</h1>
-                            <div class="tabSetholder bgWhite">
-                                <ul class="list-unstyled tabset">
-                                    <li class="active color1">
-                                        <a href="#tab1-0">Buy</a>
-                                    </li>
-                                    <li class="color2">
-                                        <a href="#tab2-0">Rent</a>
-                                    </li>
-                                    <li class="color3">
-                                        <a href="#tab3-0">Sold</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content">
-                                    <div id="tab1-0" class="active">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                    <div id="tab2-0" class="js-tab-hidden">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div id="tab3-0" class="js-tab-hidden">
-                                        <!-- findFormBlock -->
-                                        <form action="#" class="findFormBlock findFormBlock4">
-                                            <div class="row align-center">
-                                                <div class="col-xs-12 col-sm-8">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div>
-            <!-- introSlide -->
-            <article class="introSlide bgCover"
                 style="background-image: url(https://ddclawfirm.com/wp-content/uploads/2017/11/4-Things-Real-Estate-Attorneys-Consider-Vital-1030x618.jpg);">
                 <div class="container introSlideHolder">
                     <div class="align">
@@ -196,7 +22,7 @@
                                         <a href="#tab2-0">Rent</a>
                                     </li>
                                     <li class="color3">
-                                        <a href="#tab3-0">Sold</a>
+                                        <a href="#tab3-0">Investment</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
@@ -207,13 +33,13 @@
                                                 <div class="col-xs-12 col-sm-8">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
+                                                            placeholder="Search Buy...">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
                                                     <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
+                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
                                                 </div>
 
                                             </div>
@@ -227,13 +53,13 @@
                                                 <div class="col-xs-12 col-sm-8">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
+                                                            placeholder="Search Rent...">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
                                                     <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
+                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
                                                 </div>
 
                                             </div>
@@ -246,13 +72,13 @@
                                                 <div class="col-xs-12 col-sm-8">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control elemenBlock"
-                                                            placeholder="Enter Your Keyword...">
+                                                            placeholder="Search Investment...">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
                                                     <button type="button"
-                                                        class="btn btnSecondary text-uppercase fontNeuron">SEARCH</button>
+                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
                                                 </div>
 
                                             </div>
@@ -268,48 +94,48 @@
     </section>
     <div class="container mt-5">
         <div class="row">
-            <h1 class="text-center fontNeuron blockH text-uppercase" style="margin-top: 50px;">See how Trulia can help
+            <h1 class="text-center fontNeuron blockH text-uppercase" style="margin-top: 50px;">See how Globelgri can help
             </h1>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-                    <a href="#">
+                    <a href="{{route('home_for_sale')}}">
                         <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Buy a home</h4>
-                <p class="text-center">With over 1 million+ homes for sale available on the website, Trulia can match
+                <p class="text-center" style="color: black">With over 1 million+ homes for sale available on the website, Globelgri can match
                     you with a house you will want to call home.</p>
 
                 <div class="col text-center">
-                    <button class="btn btnSecondary ">Find a home </button>
+                    <a href="{{route('home_for_sale')}}" type="button" class="btn" style="background-color: #8b5925; color:white">Find a home </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-                    <a href="#">
+                    <a href="{{route('home_for_sale')}}">
                         <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Rent a home</h4>
-                <p class="text-center">With 35+ filters and custom keyword search, Trulia can help you easily find a
+                <p class="text-center" style="color: black">With 35+ filters and custom keyword search, Globelgri can help you easily find a
                     home or apartment for rent that you'll love.</p>
 
                 <div class="col text-center">
-                    <button class="btn btnSecondary ">Find a rental </button>
+                     <a href="{{route('home_for_sale')}}" type="button" class="btn" style="background-color: #8b5925; color:white">Find a home </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
-                    <a href="#">
+                    <a href="{{route('home_for_sale')}}">
                         <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                     </a>
                 </div>
-                <h4 class="text-center">See neighborhoods</h4>
-                <p class="text-center">With more neighborhood insights than any other real estate website, we've
+                <h4 class="text-center">Investment</h4>
+                <p class="text-center" style="color: black">With more neighborhood insights than any other real estate website, we've
                     captured the color and diversity of communities.</p>
 
                 <div class="col text-center">
-                    <button class="btn btnSecondary ">Learn more </button>
+                    <a href="{{route('home_for_sale')}}" type="button" class="btn" style="background-color: #8b5925; color:white">Learn more </a>
                 </div>
             </div>
         </div>
@@ -317,9 +143,9 @@
 
     <div class="container mt-5">
         <div class="row">
-            <h1 class="text-center fontNeuron blockH text-uppercase" style="margin-top: 100px;">See how Trulia can
+            <h1 class="text-center fontNeuron blockH text-uppercase" style="margin-top: 100px;">See how Globelgri can
                 help</h1>
-            <p class="text-center">Take a deep dive and browse original neighborhood photos, drone footage, resident
+            <p class="text-center" style="color: black">Take a deep dive and browse original neighborhood photos, drone footage, resident
                 <br> reviews and local insights to see if the homes for sale are right for you.</p>
             <!-- isoContentHolder -->
             <div class="row">
@@ -331,13 +157,14 @@
                                 <div class="aligncenter">
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
-                                        <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                        <a href="{{route('home_for_sale')}}">
+                                            <img  src="{{asset('frontend/images/home01.jpg')}}"
+                                                            style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                   <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -351,12 +178,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                            <img src="{{asset('frontend/images/home0.jpeg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -373,12 +200,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/360X380" alt="image description">
+                                            <img src="{{asset('frontend/images/p1.jpg')}}" style="height: 392px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                   <a href="{{route('single_property')}}"> <span class="btn btnSmall text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -395,12 +222,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                            <img src="{{asset('frontend/images/2.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -414,12 +241,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                            <img src="{{asset('frontend/images/3.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                <a href="{{route('single_property')}}"> <span class="btn btnSmall text-capitalize" style="background-color: #8b5925; color:white" >For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -436,12 +263,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                            <img src="{{asset('frontend/images/4.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
@@ -455,13 +282,12 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="https://via.placeholder.com/200X100" alt="image description">
+                                            <img src="{{asset('frontend/images/5.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <span class="btn btnSmall btn-success btnDark text-capitalize">For Sale</span>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
                                     <div class="postion">
-                                        <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
-                                                Family Home</a></h2>
+                                        <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
                                             <span class="textUnit fwNormal">/ monthly</span></h3>
                                     </div>
@@ -483,7 +309,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-2">
-                    <button type="button" class="btn btnSmall btnSecondary text-uppercase fontNeuron">SEARCH</button>
+                    <button type="button" class="btn btnSmall  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
                 </div>
             </form>
         </div>
@@ -491,41 +317,42 @@
     <section class="homeapp" style="margin-top: 3%">
         <div class="container">
             <div class="row" style="padding: 10%">
-                <div class="col-xs-12 col-sm-6  col-md-6" style="margin-left: 0">
-                    <h1 class="fontNeuron" style="color: white;">Trulia Guides</h1>
+                <div class="col-xs-12 col-sm-12  col-md-6" style="margin-left: 0">
+                    <h1 class="fontNeuron" style="color: white;">Globelgri Guides</h1>
                     <h4 class="fontNeuron" style="color: white;">Everything you need to know <br> when you're looking to buy,rent, or sell - all in one place.
                     </h4>
-                    <button type="button" class="btn  btnSecondary fontNeuron">See all the guides</button>
+  
+                    <a href="{{route('home_for_sale')}}" style="font-size: 20px; background-color: #8b5925; color:white"  type="button" class="btn  text-uppercase fontNeuron">See all the guides</a>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 float-right">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6 ">
+                        <div class="col-xs-6 col-sm-6 col-md-6 ">
                             <div class="imgHolder" style="display: block; margin-left: 55%; width: 50%;">
-                                <a href="#">
+                                <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
                                 style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
-                                <a href="#">
+                                <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
                                 style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
-                                <a href="#">
+                                <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
                                 </a>
                             </div>
 
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6">
-                            <h1 class="fontNeuron" style="color: white;">Buyer Guides</h1>
-                            <a href=""><p style="color: white;">How to buy <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
-                            <h1 class="fontNeuron" style="color: white;">Renter Guides</h1>
-                            <a href=""><p style="color: white;">How to rent <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
-                            <h1 class="fontNeuron" style="color: white;">Seller Guides</h1>
-                            <a href=""><p style="color: white;">How to sell <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <h2 class="fontNeuron" style="color: white;">Buyer Guides</h2>
+                            <a href="{{route('home_for_sale')}}"><p style="color: white;">How to buy <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
+                            <h2 class="fontNeuron" style="color: white;">Renter Guides</h2>
+                            <a href="{{route('home_for_sale')}}"><p style="color: white;">How to rent <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
+                            <h2 class="fontNeuron" style="color: white;">Invester Guides</h2>
+                            <a href="{{route('home_for_sale')}}"><p style="color: white;">How to sell <i class="fi flaticon-arrows readMoreIcn"></i></p></a>
                         </div>
                     </div>
                 </div>
@@ -537,9 +364,9 @@
     <div class="container mt-5">
         <h1 class="text-center" style="margin-top: 6%">discover a place you'll love to live</h1>
         <div class="row justify-content-center" style="margin-top: 10%">
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <h6 style="margin-left: 15%">Real Estate Markets</h6>
-                <ul style="list-style-type:none;">
+                <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -548,9 +375,9 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <h6 style="margin-left: 15%">Popular Searches</h6>
-                <ul style="list-style-type:none;">
+                <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -559,9 +386,9 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <h6 style="margin-left: 15%">Explore Trulia</h6>
-                <ul style="list-style-type:none;">
+                <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -570,9 +397,9 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3">
                 <h6 style="margin-left: 15%">For Professionals</h6>
-                <ul style="list-style-type:none;">
+                <ul style="list-style-type:none; color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -582,18 +409,18 @@
                 </ul>
             </div>
 
-            <p style="margin-left:4.6%;">Trulia is a registered Trademark of Zillow, Inc. and MLS listings are provided
-                by Zillow, Inc., a licensed real estate brokerage. See here for a list of our real estate licenses. </p>
-            <p style="margin-left:4.6%;">Zillow Group ® Other Brands:ZillowStreetEasyHotPadsOut EastPrivacy PortalCookie
+            <p style="margin-left:4.6%;color: black">Trulia is a registered Trademark of Globelgri, Inc. and MLS listings are provided
+                by Globelgri, Inc., a licensed real estate brokerage. See here for a list of our real estate licenses. </p>
+            <p style="margin-left:4.6%;color: black">Globelgri Group ® Other Brands:Globelgri EastPrivacy PortalCookie
                 Preference
                 Do Not Sell My Personal Information
             </p>
-            <p style="margin-left:4.6%;">Trulia CorporateAbout TruliaAbout Zillow GroupFair Housing
+            <p style="margin-left:4.6%;color: black">Trulia CorporateAbout TruliaAbout Globelgri GroupFair Housing
                 GuideCareersNewsroomInvestor RelationsAdvertising TermsPrivacyTerms of UseListings Quality
                 PolicySubscription TermsHelpPrivacy PortalCookie Preference
                 Do Not Sell My Personal Information
             </p>
-            <p style="margin-left:4.6%; margin-bottom:7%">Zillow Group is committed to ensuring digital accessibility for individuals
+            <p style="margin-left:4.6%; margin-bottom:7%; color: black">Globelgri Group is committed to ensuring digital accessibility for individuals
                 with disabilities. We are continuously working to improve the accessibility of our web experience for
                 everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek an
                 accommodation, please let us know.</p>

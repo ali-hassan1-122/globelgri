@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="{{asset('frontend/css/fancybox.css')}}">
     <!-- include the site stylesheet -->
     <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
+    <style>
+        .findFormBlock .btn {
+    padding: 8px;
+    font-size: 25px;
+    line-height: 1.2;
+}
+.headerHolder {
+    padding-top: 28px;
+    padding-bottom: 0px;
+}
+    </style>
 </head>
 
 <body>
@@ -45,139 +56,17 @@
                                 $logo = $row->logo;
                             }
                         ?>
-                        <!-- headerTopBar -->
-                        <div class="bgLightDark headerTopBar textLightDark">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-4">
-                                        <time datetime="2011-01-12" class="TopBarTime">Mon - Sat: 08.00 AM - 18.00
-                                            PM</time>
-                                    </div>
-                                    @if(session()->has('message'))
-                                    <div class="alert alert-danger">
-                                        {{ session()->get('message') }}
-                                    </div>
-                                    @endif
-
-                                    <div class="col-xs-6 col-sm-8 text-right">
-                                        <!-- topBarPanelList -->
-                                        <ul class="list-unstyled topBarPanelList">
-                                            <li class="hidden-xs">
-                                                <!-- topBarPanelListSocial -->
-                                                <ul class="list-unstyled socialNetworks topBarPanelListSocial">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
+                      
+                        <div class="container-fluid" style="background-color: #f0f9fb">
+                            
                             <!-- headerHolder -->
-                            <div class="headerHolder">
+                            <div class="headerHolder" style="background-color: #f0f9fb">
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-3">
-                                        <!-- logo -->
-                                        @if ($logo)
-                                        <div class="logo"><a href="home.html"><img src="{{$logo}}" alt="globelgri"></a>
-                                        </div>
-                                        @else
-                                        <div class="logo"><a href="home.html"><img
-                                                    src="{{asset('frontend/images/logo.png')}}" alt="globelgri"></a>
-                                        </div>
-                                        @endif
-                                    </div>
-                                    <div class="col-xs-6 col-sm-9 d-flex">
-                                        <!-- headerContactList -->
-                                        <ul class="list-unstyled headerContactList">
-                                            <li>
-                                                <a href="tel:+12463450695" class="icn icnBubble noShrink text-info"><i
-                                                        class="fi flaticon-24-hours"></i></a>
-                                                <div class="descr hidden-xs">
-                                                    @if ($phone)
-
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="tel:+12463450695">{{$phone}}</a></strong>
-                                                    @else
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="tel:+12463450695">+111-222-333</a></strong>
-                                                    @endif
-
-                                                    @if ($email)
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
-                                                    </strong>
-
-
-                                                    @else
-                                                    <strong class="fwNormal elemenBlock text"><a
-                                                            href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">globelgri@gmail.com</a></strong>
-
-                                                    @endif
-                                                </div>
-                                            </li>
-                                            <li class="hidden-xs">
-                                                <span class="icn icnJumping text-info noShrink"><i
-                                                        class="fi flaticon-pin-1"></i></span>
-                                                <div class="descr">
-                                                    @if($address)
-                                                    <strong class="fwNormal elemenBlock text">{{$address}}</strong>
-
-                                                    @else
-                                                    <strong class="fwNormal elemenBlock text">PO Box 16122 Collins
-                                                        Street West <br>Victoria 8007 Australia</strong>
-                                                    @endif
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <!-- headerSearchForm -->
-                                        <form action="#" class="headerSearchForm">
-                                            <a class="headerSearchOpener roundedCircle bgWhite" role="button"
-                                                data-toggle="collapse" href="#headerSearchFormcollapse"
-                                                aria-expanded="false" aria-controls="headerSearchFormcollapse"><i
-                                                    class="fi flaticon-search btnOpen"></i><i
-                                                    class="fas fa-times btnClose"></i></a>
-                                            <!-- headerSearchFormcollapse -->
-                                            <div class="collapse searchFormcollapse bgWhite"
-                                                id="headerSearchFormcollapse" aria-expanded="false" role="form">
-                                                <div class="form-group form-group-lg">
-                                                    <label for="s" class="labelIcn"><i
-                                                            class="fi flaticon-search"></i></label>
-                                                    <input type="search" id="s" class="form-control elemenBlock"
-                                                        placeholder="Search&hellip;">
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- pageNav -->
-                            <nav id="pageNav" class="navbar navbar-default pageNav1">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header hidden-sm hidden-md hidden-lg">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <!-- navbar collapse -->
-                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <div class="navigation-wrapper">
-                                        <strong
-                                            class="h elemenBlock h4 textWhite text-center hidden-sm hidden-md hidden-lg menuTitle fontNeuron"
-                                            id="menu-title">Menu</strong>
-                                        <!-- pageMainNav -->
-                                        <ul class="nav navbar-nav pageMainNav pageMainNav1">
-                                            <li class="active">
+                                    <div class="col-xs-6 col-sm-5" style="margin-left:7%;">
+                                        <ul class="nav navbar-nav pageMainNav pageMainNav1" >
+                                            <li class="active" >
                                                 {{-- <li class="active dropdown"> --}}
-                                                <a href="{{route('index')}}">Home</a>
+                                                <a style="color: #8b5925" href="{{route('index')}}">Home</a>
                                                 {{-- <a href="#" class="dropdown-toggle">Home<span class="caret"></span> --}}
                                                 {{-- <div class="frame-wrap">
                                                     <div class="frame">
@@ -197,18 +86,17 @@
                                             <li>
 
                                             <li class="dropdown dropdownFull">
-                                                <a href="#" class="dropdown-toggle">Buy <span class="caret"></span></a>
+                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Buy <span class="caret"></span></a>
                                                 <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href=""><strong>San Francisco</strong> </a>
-                                                            </li>
+                                                            
                                                             <li><a href="{{route('home_for_sale')}}">Homes for Sale</a></li>
-                                                            <li><a href="#">Open Houses</a></li>
-                                                            <li><a href="#">New Homes</a></li>
-                                                            <li><a href="#">Recently Soled</a></li>
-                                                            <li><a href="#">See Newest Listning</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Open Houses</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">New Homes</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Recently Soled</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">See Newest Listning</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -216,19 +104,18 @@
                                             <li>
 
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle">Rent<span class="caret"></span></a>
+                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Rent<span class="caret"></span></a>
                                                 <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href=""><strong>San Francisco</strong> </a>
-                                                            </li>
-                                                            <li><a href="">All Rentals</a></li>
-                                                            <li><a href="">Apartments for Rent</a></li>
-                                                            <li><a href="">Houses for Rent</a></li>
-                                                            <li><a href="">Roomes for Rent</a></li>
-                                                            <li><a href="">See Newest Listning</a></li>
-                                                            <li><a href="">Post Rental Listning</a>
+                                                           
+                                                            <li><a href="{{route('home_for_sale')}}">All Rentals</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Apartments for Rent</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Houses for Rent</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Roomes for Rent</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">See Newest Listning</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Post Rental Listning</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -237,66 +124,73 @@
                                             <li>
                                             <li class="dropdown">
 
-                                                <a href="#" class="dropdown-toggle">Mortgage<span
+                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Mortgage<span
                                                         class="caret"></span></a>
                                                 <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href=""><strong>San Francisco</strong> </a>
-                                                            </li>
-                                                            <li><a href="">Mortgage Overview </a></li>
-                                                            <li><a href="">Get Pre-Qualified</a></li>
-                                                            <li><a href="">Mortgage Rates</a></li>
-                                                            <li><a href="">Refinance Rates</a></li>
-                                                            <li><a href="">Mortgage Calculator</a>
-                                                            </li>
-                                                            <li><a href="">Affordability
-                                                                    Calculator</a></li>
-                                                            <li><a href="">Refinance
+                                                           
+                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Overview </a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Get Pre-Qualified</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Rates</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Refinance Rates</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Calculator</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Affordability Calculator</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Refinance
                                                                     Calculator</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
+
                                     </div>
-                                </div>
-                                <!-- userOptions -->
-                                <div class="userOptions">
-                                    <!-- UserLinksList -->
-                                    @if(Auth::check())
+                                        <div class="col-xs-6 col-sm-2" style="margin-left:-7%">
+                                        <!-- logo -->
+                                        @if ($logo)
+                                        <div class="logo"><a href="{{route('index')}}"><img src="{{$logo}}" style="height:120px; width:135px;margin-top:-35px" alt="globelgri"></a>
+                                        </div>
+                                        @else
+                                        <div class="logo"><a href="{{route('index')}}"><img
+                                                    src="{{asset('frontend/images/logo5.png')}}" style="height:120px; width:135px; margin-top:-35px" alt="globelgri"></a>
+                                        </div>
+                                        @endif
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 d-flex" style="margin-left:0%">
+                                       @if(Auth::check())
                                     <!-- headerModalOpener -->
                                        <ul class="list-unstyled UserLinksList">
                                         <li>
                                             <a href="{{route('property.create')}}" >
-                                                <i class="fa fa-plus"></i>
-                                                <strong class="text fwNormal hidden-xs hidden-sm"> Submit Property</strong>
+                                                <i class="fa fa-plus" style="color:#8b5925"></i>&nbsp;<strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925"> Submit Property</strong>
                                             </a>
                                         </li>
                                     </ul>
-                                    <a href="{{route('agent.dashboard')}}" class="headerModalOpener text-uppercase fontNeuron fwBold">Dashboard</a>
+                                    <a href="{{route('agent.dashboard')}}" class="headerModalOpener text-uppercase fontNeuron fwBold" style="background-color: #8b5925">Dashboard</a>
                                     @else
                                     <ul class="list-unstyled UserLinksList">
                                         <li>
                                             <a href="#popup1" class="lightbox">
-                                                <i class="fi flaticon-social icn"></i>
-                                                <strong class="text fwNormal hidden-xs hidden-sm">Login</strong>
+                                                <i class="fi flaticon-social icn" style=" color: #8b5925;"></i>
+                                                <strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925">Login</strong>
                                             </a>
                                         </li>
                                         @if (Route::has('register'))
                                         <li>
                                             <a href="#popup1" class="lightbox">
-                                                <i class="fi flaticon-edit icn"></i>
-                                                <strong class="text fwNormal hidden-xs hidden-sm">Register</strong>
+                                                <i class="fi flaticon-edit icn" style="color: #8b5925"></i>
+                                                <strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925">Register</strong>
                                             </a>
                                         </li>
                                         @endif
                                     </ul>
-                                    <a class="headerModalOpener text-uppercase fontNeuron fwBold"></a>
+                                    <a href="" class="headerModalOpener text-uppercase fontNeuron fwBold" style="background-color: #8b5925">Saved Property</a>
                                     @endif
+                                    </div>
                                 </div>
-                            </nav>
+                            </div>
+                            <!-- pageNav -->
                         </div>
                     </div>
                 </header>
@@ -313,26 +207,25 @@
                                 @if($description)
                                 <p>{{$description}}</p>
                                 @else
-                                <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Sed ut purus eget nunc ut
-                                    dignissim cursus.</p>
+                                <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities. </p>
                                 @endif
                                 <address>
                                     <dl>
-                                        <dt><i class="fi flaticon-navigation"></i></dt>
+                                        <dt><i class="fi flaticon-navigation" style="color: white"></i></dt>
                                         @if ($address)
                                         <dd>{{$address}}</dd>
                                         @else
                                         <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
                                         @endif
 
-                                        <dt><i class="fi flaticon-24-hours"></i></dt>
+                                        <dt><i class="fi flaticon-24-hours" style="color: white"></i></dt>
                                         @if ($phone)
                                         <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
                                         @else
                                         <dd><a href="tel:+12463450695">+111-222-333</a></dd>
                                         @endif
 
-                                        <dt><i class="fi flaticon-mail"></i></dt>
+                                        <dt><i class="fi flaticon-mail" style="color: white"></i></dt>
                                         @if ($email)
                                         <dd><a
                                                 href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
@@ -380,7 +273,7 @@
                                         <div class="descrWrap">
                                             <h3 class="fwNormal"><a href="#">Do what you love and tomorrow will pay</a>
                                             </h3>
-                                            <h4 class="fwSemi">$ 1,27,000</h4>
+                                            <h4 class="fwSemi" style="color: white">$ 1,27,000</h4>
                                         </div>
                                     </li>
                                     <li>
@@ -391,7 +284,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h3 class="fwNormal"><a href="#">We’re ready for the TRID rules!</a></h3>
-                                            <h4 class="fwSemi">$ 527,000</h4>
+                                            <h4 class="fwSemi" style="color: white">$ 527,000</h4>
                                         </div>
                                     </li>
                                 </ul>
@@ -400,22 +293,22 @@
                     </div>
                 </aside>
                 <!-- pageFooter -->
-                <footer id="pageFooter">
-                    <div class="container pageFooterHolder">
+                <footer id="pageFooter" style="background-color: #06356d">
+                    <div class="container pageFooterHolder" >
                         <div class="row">
                             <div class="col-xs-12 col-sm-push-6 col-sm-6">
                                 <!-- pageFooterSocial -->
                                 <ul class="socialNetworks list-unstyled pageFooterSocial">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li style="color: white"><a href="#"><i class="fab fa-google"></i></a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-pull-6 col-sm-6">
-                                <p>2021 <a href="#">globelgri</a> - All rights reserved</p>
+                                <p style="color: white">2021 <a href="#">globelgri</a> - All rights reserved</p>
                             </div>
                         </div>
                     </div>
@@ -546,6 +439,7 @@
     <script src="{{asset('frontend/js/jquery.main.js')}}"></script>
     	<script type="text/javascript" src="{{asset('frontend/js/map2.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/init.js')}}"></script>
+    
     
 </body>
 

@@ -14,25 +14,25 @@ class RoleSeeder extends Seeder
     {
         DB::table('roles')->insert([
             [
-                'agent_role' => ('agent'),
+                'agent_role' => ('Agent'),
             ],
             [
-                'agent_role' => ('property_manager'),
+                'agent_role' => ('Property Manager'),
             ],
             [
-                'agent_role' => ('lender'),
+                'agent_role' => ('Lender'),
             ],
             [
-                'agent_role' => ('builder'),
+                'agent_role' => ('Builder'),
             ],
             [
-                'agent_role' => ('investor'),
+                'agent_role' => ('Investor'),
             ],
             [
-                'agent_role' => ('renter'),
+                'agent_role' => ('Renter'),
             ],
             [
-                'agent_role' => ('platform_administrator'),
+                'agent_role' => ('Platform Administrator'),
             ]
         ]);
     }

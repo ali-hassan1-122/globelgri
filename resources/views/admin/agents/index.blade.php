@@ -59,7 +59,37 @@
                                                 @endif
                                             </span></td>
                                             <td class="text-center">
+                                                @if($row->role->agent_role == 'Agent')
+                                                <span class="badge badge-danger">
                                                 {{$row->role->agent_role}}
+                                                </span>
+                                                @elseif($row->role->agent_role == 'Property Manager')
+                                                <span class="badge badge-success">
+                                                {{$row->role->agent_role}}
+                                                </span>
+                                                 @elseif($row->role->agent_role == 'Lender')
+                                                <span class="badge badge-info">
+                                                {{$row->role->agent_role}}
+                                                </span>
+                                                  @elseif($row->role->agent_role == 'Builder')
+                                                <span class="badge badge-dark">
+                                                {{$row->role->agent_role}}
+                                                </span>
+
+                                                 @elseif($row->role->agent_role == 'Investor')
+                                                <span class="badge badge-light ">
+                                                {{$row->role->agent_role}}
+                                                </span>
+
+                                                   @elseif($row->role->agent_role == 'Renter')
+                                                <span class="badge badge-secondary">
+                                                {{$row->role->agent_role}}
+                                                </span>
+                                                     @elseif($row->role->agent_role == 'Platform Administrator')
+                                                <span class="badge badge-warning">
+                                                {{$row->role->agent_role}}
+                                                </span>
+                                                @endif
                                             </td>
                                         <td class="text-center">
                                             <a href="" type="button" class="btn btn-sm btn-info text-white"

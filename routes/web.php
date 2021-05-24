@@ -101,6 +101,8 @@ Route::get('/', 'Frontend\FrontEndController@index')->name('index');
 
 Route::get('/home-for-sale', 'Frontend\FrontEndController@HomeForSale')->name('home_for_sale');
 
+Route::get('/single-property', 'Frontend\FrontEndController@SingleProperty')->name('single_property');
+
 
 
 Auth::routes();

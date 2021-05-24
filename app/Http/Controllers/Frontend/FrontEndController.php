@@ -24,4 +24,9 @@ class FrontEndController extends Controller
     {
         return view('frontend.buy.home-for-sale');
     }
+
+    public function SingleProperty()
+    {
+        return view('frontend.buy.single-property');
+    }
 }
