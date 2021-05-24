@@ -7,7 +7,7 @@
         <div class="slick-fade slickSlider introSlider propertyIntroImageSlider">
             <div>
                 <span class="bgCover elemenBlock introSlide"
-                    style="background-image: url({{asset('frontend/images/home0.jpeg')}});"></span>
+                    style="background-image: url({{asset('frontend/images/d.jpg')}});"></span>
             </div>
             <div>
                 <span class="bgCover elemenBlock introSlide"

@@ -328,7 +328,7 @@
                                             <div>
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
-                                                        <img src="{{asset('frontend/images/home01.jpg')}}"
+                                                        <img src="{{asset('frontend/images/home01.jpeg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
                                                     </div>
                                                 </a>
@@ -337,7 +337,7 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="{{asset('frontend/images/home01.jpg')}}"
+                                                        <img src="{{asset('frontend/images/home01.jpeg')}}"
                                                             alt="image description">
 
                                                     </div>
@@ -347,7 +347,7 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="{{asset('frontend/images/home01.jpg')}}"
+                                                        <img src="{{asset('frontend/images/home01.jpeg')}}"
                                                             alt="image description">
 
                                                     </div>
@@ -420,7 +420,16 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="{{asset('frontend/images/home0.jpeg')}}"
+                                                        <img src="{{asset('frontend/images/home0.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a href="{{route('single_property')}}">
+                                                    <div class="imgHolder">
+<img src="{{asset('frontend/images/home0.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -430,18 +439,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
-
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <a href="{{route('single_property')}}">
-                                                    <div class="imgHolder">
-
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                        <img src="{{asset('frontend/images/home0.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -520,8 +519,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                      <img src="{{asset('frontend/images/2.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -530,8 +529,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                      <img src="{{asset('frontend/images/2.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -610,8 +609,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                        <img src="{{asset('frontend/images/3.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -620,8 +619,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                        <img src="{{asset('frontend/images/3.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -699,8 +698,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                        <img src="{{asset('frontend/images/4.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -709,8 +708,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                                        <img src="{{asset('frontend/images/4.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -789,8 +788,8 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+                                    <img src="{{asset('frontend/images/5.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -798,9 +797,8 @@
                                             <div>
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
-
-                                                        <img src="https://via.placeholder.com/360x260"
-                                                            alt="image description">
+<img src="{{asset('frontend/images/5.jpg')}}"
+                                                            style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
                                                 </a>
@@ -926,7 +924,7 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p03.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p03.jpeg')}}" style="height: 462px; width:489px;" alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Rincon Hill</h2>
                                         <div class="textwrap ">
@@ -985,7 +983,7 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p6.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/a.jpg')}}" style="height: 462px; width:489px;" alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Russian Hill</h2>
                                         <div class="textwrap ">
@@ -1012,7 +1010,7 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/home0.jpeg')}}" alt="image description"
+                                    <img src="{{asset('frontend/images/c.jpg')}}" alt="image description"
                                         style="height: 226px; width:600px;">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Bayview</h2>
@@ -1064,7 +1062,7 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/b.jpg')}}" alt="image description"
+                                    <img src="{{asset('frontend/images/e.jpg')}}" alt="image description"
                                         style="height: 226px; width:600px;">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">North Beach</h2>
@@ -1143,7 +1141,7 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/e.jpg')}}" alt="image description"
+                                    <img src="{{asset('frontend/images/d.jpg')}}" alt="image description"
                                         style="height: 226px; width:370px;">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Portola</h2>

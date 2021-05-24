@@ -99,7 +99,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Buy a home</h4>
@@ -113,7 +113,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Rent a home</h4>
@@ -127,7 +127,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Investment</h4>
@@ -158,7 +158,7 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="{{route('home_for_sale')}}">
-                                            <img  src="{{asset('frontend/images/home01.jpg')}}"
+                                            <img  src="{{asset('frontend/images/home0.jpg')}}"
                                                             style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
@@ -178,7 +178,7 @@
                                     <!-- postColumnImageSlider -->
                                     <div class="imgHolder">
                                         <a href="#">
-                                            <img src="{{asset('frontend/images/home0.jpeg')}}" style="height: 185px; width:368px;" alt="image description">
+                                            <img src="{{asset('frontend/images/home01.jpeg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
                                     <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
@@ -329,19 +329,19 @@
                         <div class="col-xs-6 col-sm-6 col-md-6 ">
                             <div class="imgHolder" style="display: block; margin-left: 55%; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
-                                    <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                                    <img src="{{asset('frontend/images/homes1.png')}}" style="height: 90px" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
                                 style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
-                                    <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                                    <img src="{{asset('frontend/images/homes1.png')}}" style="height: 90px" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
                                 style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
-                                    <img src="{{asset('frontend/images/home2.png')}}" alt="image description">
+                                    <img src="{{asset('frontend/images/homes1.png')}}"  style="height: 90px" alt="image description">
                                 </a>
                             </div>
 
