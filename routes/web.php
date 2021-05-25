@@ -103,6 +103,14 @@ Route::get('/home-for-sale', 'Frontend\FrontEndController@HomeForSale')->name('h
 
 Route::get('/single-property', 'Frontend\FrontEndController@SingleProperty')->name('single_property');
 
+Route::get('/contact-us', 'Frontend\FrontEndController@ContactUs')->name('contact_us');
+
+Route::get('/blog', 'Frontend\FrontEndController@blog')->name('blog');
+
+Route::get('/single-blog', 'Frontend\FrontEndController@SingleBlog')->name('single_blog');
+
+
+
 
 
 Auth::routes();

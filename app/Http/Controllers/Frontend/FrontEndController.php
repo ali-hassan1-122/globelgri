@@ -6,6 +6,7 @@ use App\User;
 use App\GeneralSetting;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use PhpParser\Node\Expr\FuncCall;
 
 class FrontEndController extends Controller
 {
@@ -28,5 +29,20 @@ class FrontEndController extends Controller
     public function SingleProperty()
     {
         return view('frontend.buy.single-property');
+    }
+
+    public function ContactUs()
+    {
+        return view('frontend.contact-us');
+    }
+
+    public function blog()
+    {
+        return view('frontend.blog');
+    }
+
+    public function SingleBlog()
+    {
+        return view('frontend.single-blog');
     }
 }

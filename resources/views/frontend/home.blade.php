@@ -38,8 +38,9 @@
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
+                                                    
+                                                    <a href="{{route('home_for_sale')}}" type="button"
+                                                        class="btn  text-uppercase fontNeuron"  style="background-color: #8b5925; color:white; ">SEARCH</a>
                                                 </div>
 
                                             </div>
@@ -58,8 +59,8 @@
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
+                                                    <a href="{{route('home_for_sale')}}" type="button"
+                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</a>
                                                 </div>
 
                                             </div>
@@ -77,8 +78,8 @@
                                                 </div>
 
                                                 <div class="col-xs-12 col-sm-4">
-                                                    <button type="button"
-                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
+                                                    <a href="{{route('home_for_sale')}}" type="button"
+                                                        class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</a>
                                                 </div>
 
                                             </div>
@@ -99,7 +100,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}"  style="margin-top: 20%; height:160px" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Buy a home</h4>
@@ -107,13 +108,13 @@
                     you with a house you will want to call home.</p>
 
                 <div class="col text-center">
-                    <a href="{{route('home_for_sale')}}" type="button" class="btn" style="background-color: #8b5925; color:white">Find a home </a>
+                    <a href="{{route('home_for_sale')}}" type="button" class="btn" style="background-color: #8b5925; color:white;">Find a home </a>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}" style="margin-top: 20%;height:160px" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Rent a home</h4>
@@ -127,7 +128,7 @@
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="imgHolder" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
                     <a href="{{route('home_for_sale')}}">
-                        <img src="{{asset('frontend/images/homes1.png')}}" alt="image description">
+                        <img src="{{asset('frontend/images/homes1.png')}}" style="margin-top: 20%;height:160px" alt="image description">
                     </a>
                 </div>
                 <h4 class="text-center">Investment</h4>
@@ -181,7 +182,7 @@
                                             <img src="{{asset('frontend/images/home01.jpeg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span></a>
                                     <div class="postion">
                                         <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
@@ -203,7 +204,7 @@
                                             <img src="{{asset('frontend/images/p1.jpg')}}" style="height: 392px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                   <a href="{{route('single_property')}}"> <span class="btn btnSmall text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
+                                   <a href="{{route('single_property')}}"> <span class="btn btnSmall text-capitalize" style="background-color: #8b5925; color:white">For Investmet</span></a>
                                     <div class="postion">
                                         <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
@@ -225,7 +226,7 @@
                                             <img src="{{asset('frontend/images/2.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span></a>
                                     <div class="postion">
                                         <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                                 Family Home</a></h2>
@@ -285,7 +286,7 @@
                                             <img src="{{asset('frontend/images/5.jpg')}}" style="height: 185px; width:368px;" alt="image description">
                                         </a>
                                     </div>
-                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span></a>
+                                    <a href="{{route('single_property')}}"> <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span></a>
                                     <div class="postion">
                                         <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury Family Home</a></h2>
                                         <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span>
@@ -302,14 +303,14 @@
     <div class="container mt-5">
         <div class="row">
             <!-- findFormBlock -->
-            <form action="#" class="findFormBlock findFormBlock4">
-                <div class="col-xs-12 col-sm-6" style="margin-left: 11%">
-                    <div class="form-group ">
+            <form action="#" class="findFormBlock findFormBlock4" style="text-align: center">
+                <div class="col-xs-12 col-sm-6  col-md-10" >
+                    <div class="form-group">
                         <input type="text" class="form-control" placeholder="Enter Your Keyword...">
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-2">
-                    <button type="button" class="btn btnSmall  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</button>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <a href="{{route('home_for_sale')}}" type="button" class="btn btnSmall  text-uppercase fontNeuron" style="background-color: #8b5925; color:white">SEARCH</a>
                 </div>
             </form>
         </div>
@@ -322,24 +323,24 @@
                     <h4 class="fontNeuron" style="color: white;">Everything you need to know <br> when you're looking to buy,rent, or sell - all in one place.
                     </h4>
 
-                    <a href="{{route('home_for_sale')}}" style="font-size: 20px; background-color: #8b5925; color:white"  type="button" class="btn  text-uppercase fontNeuron">See all the guides</a>
+                    <a href="{{route('home_for_sale')}}" style="font-size: 20px; background-color: #8b5925; color:white; margin-top:7%"  type="button" class="btn  text-uppercase fontNeuron">See all the guides</a>
                 </div>
                 <div class="col-xs-12 col-sm-6  col-md-6 float-right">
-                    <div class="row">
+                    <div class="row" style="margin-top: 6%">
                         <div class="col-xs-6 col-sm-6 col-md-6 ">
-                            <div class="imgHolder" style="display: block; margin-left: 55%; width: 50%;">
+                            <div class="imgHolder" style="display: block; margin-left: 40%; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/homes1.png')}}" style="height: 90px" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
-                                style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
+                                style="display: block; margin-left: 40%; margin-right: auto; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/homes1.png')}}" style="height: 90px" alt="image description">
                                 </a>
                             </div>
                             <div class="imgHolder"
-                                style="display: block; margin-left: 55%; margin-right: auto; width: 50%;">
+                                style="display: block; margin-left: 40%; margin-right: auto; width: 50%;">
                                 <a href="{{route('home_for_sale')}}">
                                     <img src="{{asset('frontend/images/homes1.png')}}"  style="height: 90px" alt="image description">
                                 </a>
@@ -363,8 +364,8 @@
 
     <div class="container mt-5">
         <h1 class="text-center" style="margin-top: 6%">discover a place you'll love to live</h1>
-        <div class="row justify-content-center" style="margin-top: 10%">
-            <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="row" style="margin-top: 10%">
+            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center; margin-left:-2%">
                 <h6 style="margin-left: 15%">Real Estate Markets</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
@@ -375,7 +376,7 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
                 <h6 style="margin-left: 15%">Popular Searches</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
@@ -386,7 +387,7 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
                 <h6 style="margin-left: 15%">Explore Globel Gri</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
@@ -397,7 +398,7 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
                 <h6 style="margin-left: 15%">For Professionals</h6>
                 <ul style="list-style-type:none; color: black">
                     <li>For Professionals</li>

@@ -117,21 +117,21 @@
                         <div class="col-xs-12 col-sm-12 col-md-4" style="text-align: right; margin-top:10px">
                             {{-- <figure class="hb-author-img"> --}}
                             {{-- <a href="#"><img src="https://via.placeholder.com/150x150" alt="image description"></a> --}}
-                               <div class="map-area" style="height:200px;">
-                        <div id="map-container">
-                            <div id="map_div">
-                                &nbsp;
+                            <div class="map-area" style="height:200px;">
+                                <div id="map-container">
+                                    <div id="map_div">
+                                        &nbsp;
 
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
                             {{-- </figure> --}}
                         </div>
 
                         {{-- <h1>Description</h1> --}}
-                      
+
                     </section>
-                         <section id="Video" class="accountData aboutBlock overlaychange" style="margin-left:6% ">
+                    <section id="Video" class="accountData aboutBlock overlaychange" style="margin-left:6% ">
                         <div class="head">
                             <h4 class="fontNeuron">Property Video</h4>
                         </div>
@@ -142,11 +142,12 @@
                                 class="video-play"><i class="fi flaticon-play-button"></i></a>
                         </div>
                     </section>
-                        <section id="PageViews" class="Pageviews">
+                    <section id="PageViews" class="Pageviews">
                         <div class="head" style="margin-left: 45px">
                             <h4 class="fontNeuron">Description</h4>
                         </div>
-                          <p class="" style="margin-left: 45px; color:black">Fantastic opportunity in prime Ingleside location. Well preserved 1925 view home a short
+                        <p class="" style="margin-left: 45px; color:black">Fantastic opportunity in prime Ingleside
+                            location. Well preserved 1925 view home a short
                             stroll from Ocean Ave. commercial corridor. Walk to Whole Foods, BART and MUNI trains. Main
                             level includes a spacious living room with fireplace, formal dining room, large eat-in
                             kitchen and two generous bedrooms w/ expansive panoramic views of the East bay. Hardwood
@@ -154,8 +155,8 @@
                             expansion potential. Large rear deck and level yard. Easy access to the 101 & 280 freeways.
                         </p>
                     </section>
-               
-                 
+
+
                 </article>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-4">
@@ -164,10 +165,12 @@
                     <section class="contactFormPage widget">
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#home" style="color:#8b5925"><b> Schedule a Tour</b></a>
+                                <a class="nav-link active" data-toggle="tab" href="#home" style="color:#8b5925"><b>
+                                        Schedule a Tour</b></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#menu1" style="color:#8b5925"><b>Request Info</b></a>
+                                <a class="nav-link" data-toggle="tab" href="#menu1" style="color:#8b5925"><b>Request
+                                        Info</b></a>
                             </li>
                         </ul>
 
@@ -213,7 +216,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btnDark fontNeuron buttonXL" style="background-color: #8b5925; color:white">Schedule a
+                                    <button type="submit" class="btn btnDark fontNeuron buttonXL"
+                                        style="background-color: #8b5925; color:white">Schedule a
                                         Tour</button>
                                     <h6 class="fontNeuron"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                                         Public Health Advisory</h6>
@@ -258,7 +262,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btnDark fontNeuron buttonXL" style="background-color: #8b5925; color:white">Request Info</button>
+                                    <button type="submit" class="btn btnDark fontNeuron buttonXL"
+                                        style="background-color: #8b5925; color:white">Request Info</button>
                                     <h6 class="fontNeuron"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                                         Public Health Advisory</h6>
                                     <p class="fontNeuron" style="font-size: 11px">By pressing Schedule A Tour, you agree
@@ -279,12 +284,12 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 bgWhite" style="margin-left: 5%; width:1096px;">
-                  
-                        <div class="head">
-                            <h4 class="fontNeuron">Floor Plans</h4>
 
-                        </div>
-                     
+                <div class="head">
+                    <h4 class="fontNeuron">Floor Plans</h4>
+
+                </div>
+
             </div>
         </div>
     </div>

@@ -5,26 +5,220 @@
 <!-- main -->
 <main>
     <!-- findFormBlock -->
-
-     
-
-    
-{{-- <form action="#" class="bgWhite findFormBlock hasShadow" style="margin-top: 0%; "  id="map" style="height:530px"> --}}
-        <div class="container-fluid" >
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-12">
-                   <div class="map-area" style="height:530px; margin-left:-1%;margin-right:-1%">
-                        <div id="map-container">
-                            <div id="map_div">
-                                &nbsp;
-                            </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="map-area" style="height:530px; margin-left:-1%;margin-right:-1%">
+                    <div id="map-container">
+                        <div id="map_div">
+                            &nbsp;
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-  {{-- </form> --}}
-  <form action="#" class="bgWhite findFormBlock hasShadow" id="form" style="height:460px;display:none">
+    </div>
+    <!-- findFormBlock -->
+    <form action="#" class="findFormBlock findFormBlock2 bgLightDark hasShadowTop offsetHeaderTop"
+        style="margin-top: -3.5%">
+        <div class="container">
+            <div class="row align-center d-flex">
+                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control elemenBlock noBdr sizeMedium"
+                            placeholder="Enter address e.g. street, city and state or zip">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="form-group">
+                        <i class="fi flaticon-target icnInput"></i>
+                        <input type="text" class="form-control elemenBlock noBdr sizeMedium" placeholder="All Cities">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <div class="form-group">
+                        <select data-placeholder="All Areas" class="chosen-select noBdr sizeMedium">
+                            <option value="1">All Areas</option>
+                            <option value="2">All Areas</option>
+                            <option value="2">All Areas</option>
+                            <option value="2">All Areas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-3">
+                    <div class="btnsWrap">
+                        <!-- otherFeaturesOpener -->
+                        <a class="btnPlus otherFeaturesOpener text-capitalize noTopBottom" role="button"
+                            data-toggle="collapse" href="#otherFeaturescollapse" aria-expanded="false"
+                            aria-controls="otherFeaturescollapse">
+                            <i class="fas btnIcn fa-plus-circle text-info opener"></i>
+                            <i class="fas fa-minus-circle closer btnIcn text-info"></i>
+                            Advanced
+                        </a>
+                        <a href="{{route('home_for_sale')}}" type="button"
+                            class="btn  buttonSmall text-uppercase fontNeuron hidden-xs"
+                            style="background-color: #8b5925; color:white">SEARCH</a>
+                    </div>
+                </div>
+            </div>
+            <!-- orderRow -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- otherFeaturesCollapse -->
+                    <div class="collapse otherFeaturesCollapse" id="otherFeaturescollapse">
+                        <!-- checkList -->
+                        <ul class="list-unstyled checkList text-primary">
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Air conditioning</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Cofee pot</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Fan</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Hi-fi</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Balcony</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Computer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Fridge</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Internet</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Bedding</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Cot</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Grill</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Iron</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Cable TV</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Dishwasher</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Hairdryer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Juicer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Cleaning after exit</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">DVD</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Heating</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fwNormal customLabelCheck">
+                                    <input type="checkbox" class="customFormInputReset">
+                                    <span class="fakeCheckbox"></span>
+                                    <span class="fakeLabel">Lift</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+                    <a href="{{route('home_for_sale')}}" type="button"
+                        class="btn btnDark text-uppercase fontNeuron">SEARCH</a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form action="#" class="bgWhite findFormBlock hasShadow" id="form" style="height:460px;display:none">
         <div class="container-fluid" style="margin-top: 4%">
             <h2 class="fontNeuron">FIND YOUR <span class="text-info">HOME</span></h2>
             <hr class="sep elemenBlock">
@@ -273,7 +467,8 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-offset-6 col-sm-3 order2">
-                    <button type="button" class="btn  text-uppercase fontNeuron pull-right" style="background-color: #8b5925; color:white">SEARCH</button>
+                    <button type="button" class="btn  text-uppercase fontNeuron pull-right"
+                        style="background-color: #8b5925; color:white">SEARCH</button>
                 </div>
             </div>
         </div>
@@ -380,7 +575,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>The Village, Jersey City, NJ 07302, USA </p>
                                     </address>
-                                    <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Sale</span>
+                                    <span class="btn btnSmall  text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Sale</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -429,7 +625,7 @@
                                             <div>
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
-<img src="{{asset('frontend/images/home0.jpg')}}"
+                                                        <img src="{{asset('frontend/images/home0.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -471,7 +667,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>London, United Kingdom</p>
                                     </address>
-                                    <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span>
+                                    <span class="btn btnSmall  text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Rent</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 920,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -519,7 +716,7 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                      <img src="{{asset('frontend/images/2.jpg')}}"
+                                                        <img src="{{asset('frontend/images/2.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -529,7 +726,7 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                                      <img src="{{asset('frontend/images/2.jpg')}}"
+                                                        <img src="{{asset('frontend/images/2.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -561,7 +758,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>The Village, Jersey City, NJ 07302, USA</p>
                                     </address>
-                                    <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span>
+                                    <span class="btn btnSmall  text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Rent</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 490,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -650,7 +848,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>London, United Kingdom</p>
                                     </address>
-                                    <span class="btn btnSmall text-capitalize" style="background-color: #8b5925; color:white">For Rent</span>
+                                    <span class="btn btnSmall text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Rent</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 920,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -740,7 +939,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>778 Country St. Panama City, FL</p>
                                     </address>
-                                    <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span>
+                                    <span class="btn btnSmall  text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Rent</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 250,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -788,7 +988,7 @@
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
 
-                                    <img src="{{asset('frontend/images/5.jpg')}}"
+                                                        <img src="{{asset('frontend/images/5.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -797,7 +997,7 @@
                                             <div>
                                                 <a href="{{route('single_property')}}">
                                                     <div class="imgHolder">
-<img src="{{asset('frontend/images/5.jpg')}}"
+                                                        <img src="{{asset('frontend/images/5.jpg')}}"
                                                             style="height: 260px; width:370px;" alt="image description">
 
                                                     </div>
@@ -829,7 +1029,8 @@
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
                                         <p>778 Country St. Panama City, FL</p>
                                     </address>
-                                    <span class="btn btnSmall  text-capitalize" style="background-color: #8b5925; color:white">For Rent</span>
+                                    <span class="btn btnSmall  text-capitalize"
+                                        style="background-color: #8b5925; color:white">For Rent</span>
                                     <h3 class="fontNeuron fwSemi"><span class="textSecondary">$ 320,000</span> <span
                                             class="textUnit fwNormal">/ monthly</span></h3>
                                     <!-- postColumnFoot -->
@@ -886,7 +1087,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p5.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p5.jpg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">South of Market</h2>
                                         <div class="textwrap ">
@@ -895,8 +1097,9 @@
                                                 <p>117 total homes available</p>
                                             </address>
 
-                                            <button type="button" style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
-                                                class="btn" >See home for sale</button>
+                                            <button type="button"
+                                                style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
+                                                class="btn">See home for sale</button>
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -905,7 +1108,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p4.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p4.jpg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Mission</h2>
                                         <div class="textwrap ">
@@ -914,7 +1118,8 @@
                                                 <p>89 total homes available</p>
                                             </address>
 
-                                            <button type="button" style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
+                                            <button type="button"
+                                                style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
                                                 class="btn ">See home for sale</button>
                                         </div>
                                     </figcaption>
@@ -924,7 +1129,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p03.jpeg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p03.jpeg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Rincon Hill</h2>
                                         <div class="textwrap ">
@@ -933,7 +1139,8 @@
                                                 <p>53 total homes available</p>
                                             </address>
 
-                                            <button type="button" style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
+                                            <button type="button"
+                                                style="margin-left:10%; margin-top:10%;background-color: #8b5925; color:white"
                                                 class="btn ">See home for sale</button>
                                         </div>
                                     </figcaption>
@@ -943,7 +1150,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p2.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p2.jpg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Pacific Heights</h2>
                                         <div class="textwrap ">
@@ -963,7 +1171,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/p1.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/p1.jpg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Nob Hill</h2>
                                         <div class="textwrap ">
@@ -983,7 +1192,8 @@
                         <div>
                             <div class="banner-content" style="padding: 1%">
                                 <figure class="imgHolder">
-                                    <img src="{{asset('frontend/images/a.jpg')}}" style="height: 462px; width:489px;" alt="image description">
+                                    <img src="{{asset('frontend/images/a.jpg')}}" style="height: 462px; width:489px;"
+                                        alt="image description">
                                     <figcaption class="captionWrap">
                                         <h2 class="fontNeuron text-capitalize">Russian Hill</h2>
                                         <div class="textwrap ">
@@ -1004,7 +1214,7 @@
                 <!-- findFormBlock -->
                 <h3 class="fontNeuron">Explore Neighborhoods in San Francisco, CA</h3>
                 <!-- introBanner -->
-                <section class="threeBanner">
+                <section class="threeBanner" style="margin-bottom: 3%">
                     <!-- bannerImageSlideshow -->
                     <div class="banner-slider slickSlider">
                         <div>
@@ -1165,7 +1375,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="solid" style="color:black; border-top: 1px solid #bbb;">
+
                 </section>
                 <!-- findFormBlock -->
                 {{-- <p style="color:black">Neighborhood stats provided by third party data sources.</p>
@@ -1226,7 +1436,7 @@
 
                 <h6>
                     <img src="{{asset('frontend/images/h.jpeg')}}" alt="image description"
-                        style="height: 20px; width:100px;">
+                style="height: 20px; width:100px;">
                 </h6>
                 <p style="color: black">IDX information is provided exclusively for personal, non-commercial use, and
                     may not be used for any
@@ -1333,7 +1543,7 @@
                     the answer.</p> --}}
 
             </div>
-           
+
         </div>
 </main>
 @endsection

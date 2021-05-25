@@ -11,24 +11,174 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
     <!-- include the site bootstrap stylesheet -->
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- include the site stylesheet -->
     <link rel="stylesheet" href="{{asset('frontend/css/fancybox.css')}}">
     <!-- include the site stylesheet -->
     <link rel="stylesheet" href="{{asset('frontend/style.css')}}">
     <style>
         .findFormBlock .btn {
-    padding: 8px;
-    font-size: 25px;
-    line-height: 1.2;
-}
-.headerHolder {
-    padding-top: 28px;
-    padding-bottom: 0px;
-}
+            padding: 8px;
+            font-size: 25px;
+            line-height: 1.2;
+        }
+
+        .headerHolder {
+            padding-top: 28px;
+            padding-bottom: 0px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #pageHeader {
+                display: none;
+            }
+
+            #mobile-container {
+                display: block !important;
+            }
+
+        }
+
+        #mobile-container {
+            max-width: 100%;
+            margin: auto;
+            background-color: #555;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+
+        .topnav a.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active1 {
+            background-color: white;
+            color: white;
+        }
+
+        .fancybox-close-small {
+            background: #8b5925;
+        }
+
     </style>
 </head>
 
 <body>
+    <div id="mobile-container" style="display: none">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active1"><img src="{{asset('frontend/images/mobilelogo.png')}}"
+                    style="width:110px;height:27px; margin-top:0%" alt=""></a>
+            <div id="myLinks">
+                <ul class="nav navbar-nav pageMainNav pageMainNav1">
+                    <li class="active">
+                    <li class="active dropdown">
+                        <a style="color: #8b5925" href="{{route('index')}}">Home</a>
+                        {{-- <a href="#" class="dropdown-toggle">Home<span class="caret"></span> --}}
+
+                    </li>
+                    <!-- remove dropdownFull class when its just regular dropdown -->
+                    <li>
+
+                    <li class="dropdown dropdownFull">
+                        <a href="#" class="dropdown-toggle" style="color: #8b5925" onclick="menufunction()">Buy <span
+                                class="caret"></span></a>
+                        <div class="" id="a" style="background-color:#333;display:none">
+                            <ul class="" style=" list-style-type: none;">
+
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Homes for
+                                        Sale</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Open
+                                        Houses</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">New
+                                        Homes</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Recently
+                                        Soled</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">See
+                                        Newest Listning</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" style="color: #8b5925" onclick="menufunction1()">Rent<span
+                                class="caret"></span></a>
+                        <div class="" id="b" style="background-color:#333;display:none">
+                            <ul class="" style="list-style-type: none;">
+
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">All
+                                        Rentals</a></li>
+                                <li><a href="{{route('home_for_sale')}}"
+                                        style="font-size: 12px;color:#8b5925">Apartments for Rent</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Houses
+                                        for Rent</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Roomes
+                                        for Rent</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">See
+                                        Newest Listning</a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Post
+                                        Rental Listning</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li>
+                    <li class="dropdown">
+
+                        <a href="#" class="dropdown-toggle" style="color: #8b5925"
+                            onclick="menufunction2()">Mortgage<span class="caret"></span></a>
+                        <div class="" id="c" style="background-color:#333;display:none">
+                            <ul class="" style="list-style-type: none;">
+
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Mortgage
+                                        Overview </a></li>
+                                <li><a href="{{route('home_for_sale')}}" style="font-size: 12px;color:#8b5925">Get
+                                        Pre-Qualified</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <!-- End smartphone / tablet look -->
+    </div>
+
     <!-- pageWrapper -->
     <div id="pageWrapper">
         <!-- pageMenuPushWrap -->
@@ -56,47 +206,41 @@
                                 $logo = $row->logo;
                             }
                         ?>
-
                         <div class="container-fluid" style="background-color: #f0f9fb">
+
+
+
 
                             <!-- headerHolder -->
                             <div class="headerHolder" style="background-color: #f0f9fb">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-5" style="margin-left:7%;">
-                                        <ul class="nav navbar-nav pageMainNav pageMainNav1" >
-                                            <li class="active" >
+                                        <ul class="nav navbar-nav pageMainNav pageMainNav1">
+                                            <li class="active">
                                                 {{-- <li class="active dropdown"> --}}
                                                 <a style="color: #8b5925" href="{{route('index')}}">Home</a>
-                                                {{-- <a href="#" class="dropdown-toggle">Home<span class="caret"></span> --}}
-                                                {{-- <div class="frame-wrap">
-                                                    <div class="frame">
-                                                        <ul
-                                                            class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
-                                                            <li><a href="home.html">Homepage 1</a></li>
-                                                            <li><a href="home2.html">Homepage 2</a></li>
-                                                            <li><a href="home3.html">Homepage 3</a></li>
-                                                            <li><a href="home4.html">Homepage 4</a></li>
-                                                            <li><a href="home5.html">Homepage 5</a></li>
-                                                            <li><a href="home6.html">Homepage 6</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div> --}}
+
                                             </li>
                                             <!-- remove dropdownFull class when its just regular dropdown -->
                                             <li>
 
                                             <li class="dropdown dropdownFull">
-                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Buy <span class="caret"></span></a>
+                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Buy <span
+                                                        class="caret"></span></a>
                                                 <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
 
-                                                            <li><a href="{{route('home_for_sale')}}">Homes for Sale</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Open Houses</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Homes for Sale</a>
+                                                            </li>
+                                                            <li><a href="{{route('home_for_sale')}}">Open Houses</a>
+                                                            </li>
                                                             <li><a href="{{route('home_for_sale')}}">New Homes</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Recently Soled</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">See Newest Listning</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Recently Soled</a>
+                                                            </li>
+                                                            <li><a href="{{route('home_for_sale')}}">See Newest
+                                                                    Listning</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -104,18 +248,25 @@
                                             <li>
 
                                             <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Rent<span class="caret"></span></a>
+                                                <a href="#" class="dropdown-toggle" style="color: #8b5925">Rent<span
+                                                        class="caret"></span></a>
                                                 <div class="frame-wrap">
                                                     <div class="frame">
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
 
-                                                            <li><a href="{{route('home_for_sale')}}">All Rentals</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Apartments for Rent</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Houses for Rent</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Roomes for Rent</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">See Newest Listning</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Post Rental Listning</a>
+                                                            <li><a href="{{route('home_for_sale')}}">All Rentals</a>
+                                                            </li>
+                                                            <li><a href="{{route('home_for_sale')}}">Apartments for
+                                                                    Rent</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Houses for Rent</a>
+                                                            </li>
+                                                            <li><a href="{{route('home_for_sale')}}">Roomes for Rent</a>
+                                                            </li>
+                                                            <li><a href="{{route('home_for_sale')}}">See Newest
+                                                                    Listning</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Post Rental
+                                                                    Listning</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -131,14 +282,11 @@
                                                         <ul
                                                             class="dropdown-menu pageMainNavDropdown pageMainNavDropdown1">
 
-                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Overview </a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Get Pre-Qualified</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Rates</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Refinance Rates</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Calculator</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Affordability Calculator</a></li>
-                                                            <li><a href="{{route('home_for_sale')}}">Refinance
-                                                                    Calculator</a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Mortgage Overview
+                                                                </a></li>
+                                                            <li><a href="{{route('home_for_sale')}}">Get
+                                                                    Pre-Qualified</a></li>
+                                                          
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -146,47 +294,58 @@
                                         </ul>
 
                                     </div>
-                                        <div class="col-xs-6 col-sm-2" style="margin-left:-7%">
+                                    <div class="col-xs-6 col-sm-2" style="margin-left:-7%">
                                         <!-- logo -->
                                         @if ($logo)
-                                        <div class="logo"><a href="{{route('index')}}"><img src="{{$logo}}" style="height:120px; width:135px;margin-top:-35px" alt="globelgri"></a>
+                                        <div class="logo"><a href="{{route('index')}}"><img src="{{$logo}}"
+                                                    style="height:120px; width:135px;margin-top:-35px"
+                                                    alt="globelgri"></a>
                                         </div>
                                         @else
                                         <div class="logo"><a href="{{route('index')}}"><img
-                                                    src="{{asset('frontend/images/logo5.png')}}" style="height:120px; width:135px; margin-top:-35px" alt="globelgri"></a>
+                                                    src="{{asset('frontend/images/logo5.png')}}"
+                                                    style="height:120px; width:135px; margin-top:-35px"
+                                                    alt="globelgri"></a>
                                         </div>
                                         @endif
                                     </div>
                                     <div class="col-xs-6 col-sm-4 d-flex" style="margin-left:0%">
-                                       @if(Auth::check())
-                                    <!-- headerModalOpener -->
-                                       <ul class="list-unstyled UserLinksList">
-                                        <li>
-                                            <a href="{{route('property.create')}}" >
-                                                <i class="fa fa-plus" style="color:#8b5925"></i>&nbsp;<strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925"> Submit Property</strong>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <a href="{{route('agent.dashboard')}}" class="headerModalOpener text-uppercase fontNeuron fwBold" style="background-color: #8b5925">Dashboard</a>
-                                    @else
-                                    <ul class="list-unstyled UserLinksList">
-                                        <li>
-                                            <a href="#popup1" class="lightbox">
-                                                <i class="fi flaticon-social icn" style=" color: #8b5925;"></i>
-                                                <strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925">Login</strong>
-                                            </a>
-                                        </li>
-                                        @if (Route::has('register'))
-                                        <li>
-                                            <a href="#popup1" class="lightbox">
-                                                <i class="fi flaticon-edit icn" style="color: #8b5925"></i>
-                                                <strong class="text fwNormal hidden-xs hidden-sm" style="color: #8b5925">Register</strong>
-                                            </a>
-                                        </li>
+                                        @if(Auth::check())
+                                        <!-- headerModalOpener -->
+                                        <ul class="list-unstyled UserLinksList">
+                                            <li>
+                                                <a href="{{route('property.create')}}">
+                                                    <i class="fa fa-plus" style="color:#8b5925"></i>&nbsp;<strong
+                                                        class="text fwNormal hidden-xs hidden-sm"
+                                                        style="color: #8b5925"> Submit Property</strong>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="{{route('agent.dashboard')}}"
+                                            class="headerModalOpener text-uppercase fontNeuron fwBold"
+                                            style="background-color: #8b5925">Dashboard</a>
+                                        @else
+                                        <ul class="list-unstyled UserLinksList">
+                                            <li>
+                                                <a href="#popup1" class="lightbox">
+                                                    <i class="fi flaticon-social icn" style=" color: #8b5925;"></i>
+                                                    <strong class="text fwNormal hidden-xs hidden-sm"
+                                                        style="color: #8b5925">Login</strong>
+                                                </a>
+                                            </li>
+                                            @if (Route::has('register'))
+                                            <li>
+                                                <a href="#popup1" class="lightbox">
+                                                    <i class="fi flaticon-edit icn" style="color: #8b5925"></i>
+                                                    <strong class="text fwNormal hidden-xs hidden-sm"
+                                                        style="color: #8b5925">Register</strong>
+                                                </a>
+                                            </li>
+                                            @endif
+                                        </ul>
+                                        <a href="" class="headerModalOpener text-uppercase fontNeuron fwBold"
+                                            style="background-color: #8b5925">Saved Property</a>
                                         @endif
-                                    </ul>
-                                    <a href="" class="headerModalOpener text-uppercase fontNeuron fwBold" style="background-color: #8b5925">Saved Property</a>
-                                    @endif
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +366,8 @@
                                 @if($description)
                                 <p>{{$description}}</p>
                                 @else
-                                <p>Global Gri Group is committed to ensuring digital accessibility for individuals with disabilities. </p>
+                                <p>Global Gri Group is committed to ensuring digital accessibility for individuals with
+                                    disabilities. </p>
                                 @endif
                                 <address>
                                     <dl>
@@ -249,14 +409,11 @@
                                         <li><a href="#">Privacy Policy</a></li>
                                         <li><a href="#">Contact Support</a></li>
                                         <li><a href="#">Careers</a></li>
-                                        <li><a href="#">FAQs</a></li>
                                     </ul>
                                     <ul class="list-unstyled">
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Our Agents</a></li>
+                                        <li><a href="{{route('blog')}}">Blog</a></li>
                                         <li><a href="#">How It Works</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="{{route('contact_us')}}">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -266,24 +423,26 @@
                                 <ul class="list-unstyled postsWidgetList">
                                     <li>
                                         <div class="alignleft">
-                                            <a href="#">
-                                                <img src="https://via.placeholder.com/90x70" alt="image description">
+                                            <a href="{{route('home_for_sale')}}">
+                                                <img src="{{asset('frontend/images/3.jpg')}}" alt="image description">
                                             </a>
                                         </div>
                                         <div class="descrWrap">
-                                            <h3 class="fwNormal"><a href="#">Do what you love and tomorrow will pay</a>
+                                            <h3 class="fwNormal"><a href="{{route('home_for_sale')}}">Do what you love
+                                                    and tomorrow will pay</a>
                                             </h3>
                                             <h4 class="fwSemi" style="color: white">$ 1,27,000</h4>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="alignleft">
-                                            <a href="#">
-                                                <img src="https://via.placeholder.com/90x70" alt="image description">
+                                            <a href="{{route('home_for_sale')}}">
+                                                <img src="{{asset('frontend/images/5.jpg')}}" alt="image description">
                                             </a>
                                         </div>
                                         <div class="descrWrap">
-                                            <h3 class="fwNormal"><a href="#">We’re ready for the TRID rules!</a></h3>
+                                            <h3 class="fwNormal"><a href="{{route('home_for_sale')}}">We’re ready for
+                                                    the TRID rules!</a></h3>
                                             <h4 class="fwSemi" style="color: white">$ 527,000</h4>
                                         </div>
                                     </li>
@@ -294,7 +453,7 @@
                 </aside>
                 <!-- pageFooter -->
                 <footer id="pageFooter" style="background-color: #06356d">
-                    <div class="container pageFooterHolder" >
+                    <div class="container pageFooterHolder">
                         <div class="row">
                             <div class="col-xs-12 col-sm-push-6 col-sm-6">
                                 <!-- pageFooterSocial -->
@@ -352,9 +511,11 @@
                                         </label>
                                     </div>
                                     <button type="submit"
-                                        class="btn btnSecondary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">LOGIN</button>
+                                        class="btn  elemenBlock fontNeuron fwNormal text-uppercase btnSubmit"
+                                        style="background-color: #8b5925;color:white">LOGIN</button>
                                     @if (Route::has('password.request'))
-                                    <a href="{{ route('password.request') }}" class="linkForget">Forgot Password?</a>
+                                    <a href="{{ route('password.request') }}" style="color: darkgray"
+                                        class="linkForget">Forgot Password?</a>
                                     @endif
                                 </div>
 
@@ -362,8 +523,6 @@
                                     <p>You Can Login using your facebook Profile or Google account</p>
                                     <button type="button" class="btnSocial btnFb elemenBlock"><i
                                             class="fab fa-facebook-f btnIco"></i> Facebook Connect</button>
-                                    <button type="button" class="btnSocial btnTw elemenBlock"><i
-                                            class="fab fa-twitter btnIco"></i> Twitter Connect</button>
                                     <button type="button" class="btnSocial btnG elemenBlock"><i
                                             class="fab fa-google btnIco"></i> Google Connect</button>
                                 </div>
@@ -410,14 +569,13 @@
                                     </label>
                                 </div>
                                 <button type="submit"
-                                    class="btn btn-primary elemenBlock fontNeuron fwNormal text-uppercase btnSubmit">REGISTER</button>
+                                    class="btn elemenBlock fontNeuron fwNormal text-uppercase btnSubmit"
+                                    style="background-color: #8b5925;color:white">REGISTER</button>
                             </div>
                             <div class="col">
                                 <p>You Can Login using your facebook Profile or Google account</p>
                                 <button type="button" class="btnSocial btnFb elemenBlock"><i
                                         class="fab fa-facebook-f btnIco"></i> Facebook Connect</button>
-                                <button type="button" class="btnSocial btnTw elemenBlock"><i
-                                        class="fab fa-twitter btnIco"></i> Twitter Connect</button>
                                 <button type="button" class="btnSocial btnG elemenBlock"><i
                                         class="fab fa-google btnIco"></i> Google Connect</button>
                             </div>
@@ -430,17 +588,40 @@
     </div>
     </div>
     <!-- include jQuery library -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAziipzIN4zP3UtFIBC3-e6NcNfY2vIG48&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAziipzIN4zP3UtFIBC3-e6NcNfY2vIG48&callback=myMap">
+    </script>
     <script src="{{asset('frontend/js/jquery.js')}}"></script>
     <script src="{{asset('frontend/js/plugins.js')}}"></script>
     <!-- include bootstrap JavaScript -->
     <script src="{{asset('frontend/js/bootstrap-slider.min.js')}}"></script>
     <!-- include custom JavaScript -->
     <script src="{{asset('frontend/js/jquery.main.js')}}"></script>
-    	<script type="text/javascript" src="{{asset('frontend/js/map2.js')}}"></script>
+    <script type="text/javascript" src="{{asset('frontend/js/map2.js')}}"></script>
     <script type="text/javascript" src="{{asset('frontend/js/init.js')}}"></script>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
+        function menufunction() {
+            $('#a').toggle();
+        }
+
+        function menufunction1() {
+            $('#b').toggle();
+        }
+
+        function menufunction2() {
+            $('#c').toggle();
+        }
+
+    </script>
 </body>
 
 </html>
