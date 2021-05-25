@@ -569,7 +569,7 @@
                                             class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i
                                                 class="far fa-heart"></i></a>
                                     </div>
-                                    <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Luxury
+                                    <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Luxury
                                             Family Home</a></h2>
                                     <address>
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
@@ -661,7 +661,7 @@
                                             class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i
                                                 class="far fa-heart"></i></a>
                                     </div>
-                                    <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Meridian
+                                    <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Meridian
                                             Villas</a></h2>
                                     <address>
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
@@ -752,7 +752,7 @@
                                             class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i
                                                 class="far fa-heart"></i></a>
                                     </div>
-                                    <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Elegant
+                                    <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Elegant
                                             studio flat</a></h2>
                                     <address>
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
@@ -933,7 +933,7 @@
                                             class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i
                                                 class="far fa-heart"></i></a>
                                     </div>
-                                    <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">4 Bedroom
+                                    <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">4 Bedroom
                                             New House For Sale</a></h2>
                                     <address>
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
@@ -1023,7 +1023,7 @@
                                             class="linkToFavourite roundedCircle bg-primary textWhite icnHeartBeatAnim"><i
                                                 class="far fa-heart"></i></a>
                                     </div>
-                                    <h2 class="fontNeuron text-capitalize"><a href="properties-single1.html">Villa on
+                                    <h2 class="fontNeuron text-capitalize"><a href="{{route('single_property')}}">Villa on
                                             Hollywood Boulevard</a></h2>
                                     <address>
                                         <span class="icn"><i class="fi flaticon-pin-1"></i></span>
