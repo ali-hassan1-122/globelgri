@@ -56,14 +56,14 @@
                         <!-- headerTopBar -->
                         <div class="container">
                             <!-- headerHolder -->
-                            <div class="headerHolder">
+                            <div class="headerHolder" style="height: 120px">
                                 <!-- logo -->
                                 @if ($logo)
                                 <div class="logo logoCentered"><a href="{{route('agent.dashboard')}}"><img
-                                            src="{{$logo}}" alt="LemanHouse" style="height:120px; width:135px;margin-top:-5%"></a></div>
+                                            src="{{$logo}}" alt="LemanHouse" style="height:120px; width:135px;margin-top:-16%"></a></div>
                                 @else
                                 <div class="logo logoCentered"><a href="{{route('agent.dashboard')}}"><img
-                                            src="{{asset('frontend/images/logo5.png')}}" style="height:120px; width:135px;margin-top:-5%" alt="LemanHouse"></a></div>
+                                            src="{{asset('frontend/images/logo5.png')}}" style="height:120px; width:135px;margin-top:-16%" alt="LemanHouse"></a></div>
                                 @endif
 
                             </div>
