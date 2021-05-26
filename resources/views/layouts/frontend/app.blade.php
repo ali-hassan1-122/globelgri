@@ -95,8 +95,8 @@
 
         <!-- Top Navigation Menu -->
         <div class="topnav">
-            <a href="#home" class="active1"><img src="{{asset('frontend/images/mobilelogo.png')}}"
-                    style="width:110px;height:27px; margin-top:0%" alt=""></a>
+            <a href="{{route('index')}}" class="active1"><img src="{{asset('frontend/images/mobilelogo.png')}}"
+                    style="width:110px;height:17px; margin-top:0%" alt=""></a>
             <div id="myLinks">
                 <ul class="nav navbar-nav pageMainNav pageMainNav1">
                     <li class="active">

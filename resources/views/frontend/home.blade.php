@@ -365,8 +365,8 @@
     <div class="container mt-5">
         <h1 class="text-center" style="margin-top: 6%">discover a place you'll love to live</h1>
         <div class="row" style="margin-top: 10%">
-            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center; margin-left:-2%">
-                <h6 style="margin-left: 15%">Real Estate Markets</h6>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="text-align: center; margin-left:-2%">
+                <h6 style="">Real Estate Markets</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -376,8 +376,8 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
-                <h6 style="margin-left: 15%">Popular Searches</h6>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="text-align: center">
+                <h6 style="">Popular Searches</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -387,8 +387,8 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
-                <h6 style="margin-left: 15%">Explore Globel Gri</h6>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="text-align: center">
+                <h6 style="">Explore Globel Gri</h6>
                 <ul style="list-style-type:none;color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>
@@ -398,8 +398,8 @@
                     <li>For Professionals</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3" style="text-align: center">
-                <h6 style="margin-left: 15%">For Professionals</h6>
+            <div class="col-xs-6 col-sm-6 col-md-3" style="text-align: center">
+                <h6 style="">For Professionals</h6>
                 <ul style="list-style-type:none; color: black">
                     <li>For Professionals</li>
                     <li>For Professionals</li>

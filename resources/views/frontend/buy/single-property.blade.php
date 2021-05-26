@@ -2,12 +2,12 @@
 @section('content')
 <main>
     <!-- propertyIntroBlock -->
-    <section class="propertyIntroBlock">
+    <section class="propertyIntroBlock" >
         <!-- propertyIntroImageSlider -->
-        <div class="slick-fade slickSlider introSlider propertyIntroImageSlider">
-            <div>
+        <div class="slick-fade slickSlider introSlider propertyIntroImageSlider"  >
+            <div >
                 <span class="bgCover elemenBlock introSlide"
-                    style="background-image: url({{asset('frontend/images/d.jpg')}});"></span>
+                    style="background-image: url({{asset('frontend/images/d.jpg')}});" ></span>
             </div>
             <div>
                 <span class="bgCover elemenBlock introSlide"
@@ -48,50 +48,6 @@
                 </a>
             </li>
         </ul>
-        <!-- propertyIntroCaption -->
-        <div class="container propertyIntroCaption textWhite">
-            <div class="align">
-                <div class="row alignEnd">
-                    <div class="col-xs-12 col col-sm-8">
-                        <!-- breadcrumb -->
-                        <ol class="breadcrumb breadcrumb1">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Properties</a></li>
-                            <li class="active">Listing Grid View</li>
-                        </ol>
-                        <h1 class="fontNeuron textWhite">Villa on Hollywood Boulevard <a href="#"
-                                class="btn btnSmall btn-success fontBase">For Sale</a></h1>
-                        <!-- captionAddress -->
-                        <address class="captionAddress">
-                            <span class="icn"><i class="fi flaticon-pin-1"></i></span>
-                            <p>The Village, Jersey City, NJ 07302, USA</p>
-                        </address>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 justify-end">
-                        <!-- captionActionsList -->
-                        <ul class="list-unstyled captionActionsList w100">
-                            <li><a href="#"><i class="fi flaticon-repeat"></i></a></li>
-                            <li class="hasOver">
-                                <a href="#">
-                                    <i class="fi flaticon-share"></i>
-                                </a>
-                                <!-- postColumnSocial -->
-                                <ul class="list-unstyled socialNetworks postColumnSocial">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><i class="far fa-heart"></i></a></li>
-                            <li><a href="#"><i class="fi flaticon-printer"></i></a></li>
-                        </ul>
-                        <strong class="elemenBlock textWhite price textWhite fwSemi fontNeuron w100">$ 490,000</strong>
-                        <strong class="elemenBlock fwNormal fontNeuron subtitle w100">$770 / sq ft</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <div class="twoColumns indentTop container">
