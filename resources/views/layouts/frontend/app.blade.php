@@ -317,7 +317,7 @@
                                                 <a href="{{route('property.create')}}">
                                                     <i class="fa fa-plus" style="color:#8b5925"></i>&nbsp;<strong
                                                         class="text fwNormal hidden-xs hidden-sm"
-                                                        style="color: #8b5925"> Submit Property</strong>
+                                                        style="color: #8b5925"> Saved Property</strong>
                                                 </a>
                                             </li>
                                         </ul>

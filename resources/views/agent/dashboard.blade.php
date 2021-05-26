@@ -41,7 +41,7 @@
                             Advanced
                         </a>
                         <button type="button"
-                            class="btn btnDark buttonSmall text-uppercase fontNeuron hidden-xs">SEARCH</button>
+                            class="btn  buttonSmall text-uppercase fontNeuron hidden-xs" style="background-color: #8b5925; color:white;">SEARCH</button>
                     </div>
                 </div>
             </div>
@@ -196,7 +196,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                    <button type="button" class="btn btnDark text-uppercase fontNeuron">SEARCH</button>
+                    <button type="button" class="btn  text-uppercase fontNeuron" style="background-color: #8b5925; color:white;">SEARCH</button>
                 </div>
             </div>
         </div>
@@ -206,12 +206,6 @@
         <!-- contentFiltersHeadingWrap -->
         <header class="contentFiltersHeadingWrap row">
             <div class="col-xs-12 col-sm-10">
-                <!-- breadcrumb -->
-                <ol class="breadcrumb breadcrumb1">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li class="active">Membership</li>
-                </ol>
                 <h1 class="fontNeuron">Profile</h1>
             </div>
             
@@ -265,7 +259,7 @@
                                 <li>
                                 <a href="{{route('property.create')}}">
                                     <i class="fa fa-plus"></i>
-                                    <span>Submit Property</span>
+                                    <span>Saved Property</span>
                                 </a>
                             </li>
                         
@@ -320,14 +314,12 @@
                                             <div class="custom-file mt-5">
                                                 <input type="file" class="custom-file-input" name="image"
                                                     onchange="readURL(this);" accept="image/*">
-                                                {{-- <label class="custom-file-label" for="thumbnail">Choose file</label> --}}
+                                                
                                             </div>
                                         </div>
-                                        {{-- <div class="btnArea">
-                                        <a href="#" class="btn btn-info"><i class="fa fa-upload"></i> Upload Photo</a>
-                                      </div> --}}
+                                      
                                     </div>
-                                    {{-- <span class="text text-center">*minimum 200px x 200px</span> --}}
+
                                 </div>
                                 <div class="accountContent">
                                     <div class="form-group">
@@ -351,7 +343,8 @@
                                             placeholder="Biography..">{{Auth::user()->biography}}</textarea>
                                     </div>
 
-                                    <button type="submit" class="btn alighRight btnSecondary buttonL fontNeuron">Update
+                                    <button type="submit" class="btn alighRight 
+                                     buttonL fontNeuron" style="background-color: #8b5925; color:white;">Update
                                         Profile</button>
                                 </div>
                             </div>
@@ -368,13 +361,6 @@
                             <div class="accountHolder">
                                 <div class="accountContent">
                                     <div class="row">
-                                        {{-- <div class="col-xs-12 col-md-6">
-                                        <div class="form-group">
-                                          <label for="itemN-5">Current Password</label>
-                                          <input type="password" class="form-control"  value="{{Auth::user()->password}}"
-                                        id="itemN-5">
-                                    </div>
-                                </div> --}}
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
@@ -398,7 +384,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn alighRight btnSecondary buttonL fontNeuron">Change
+                            <button type="submit" class="btn alighRight  buttonL fontNeuron" style="background-color: #8b5925; color:white;">Change
                                 Password</button>
                     </div>
                 </div>
@@ -461,7 +447,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn alighRight btnSecondary buttonL fontNeuron">Save
+                            <button type="submit" class="btn alighRight  buttonL fontNeuron" style="background-color: #8b5925; color:white;">Save
                                 Changes</button>
                         </div>
                     </div>
@@ -471,116 +457,8 @@
         </div>
         </div>
     </section>
-    <!-- signupFormAside -->
-    <form action="#" class="bgWhite signupFormAside">
-        <div class="container signupFormAsideHolder">
-            <span class="icnAbsolute elemenBlock fi flaticon-message"></span>
-            <div class="col-xs-12 col-md-offset-2 col-md-6">
-                <h3 class="fontNeuron textSecondary">Sign up for our newsletter.</h3>
-                <p>Lorem molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="form-group">
-                    <input type="email" id="email" class="form-control elemenBlock" placeholder="Your email">
-                    <button type="button" class="buttonReset fi flaticon-navigation"></button>
-                </div>
-            </div>
-        </div>
-    </form>
 </main>
-{{-- <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
 
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <!-- Small boxes (Stat box) -->
-                    <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-info">
-                                <div class="inner">
-                                    <h3>150</h3>
-
-                                    <p>New Orders</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-bag"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">More info <i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-success">
-                                <div class="inner">
-                                    <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                                    <p>Bounce Rate</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">More info <i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-warning">
-                                <div class="inner">
-                                    <h3>44</h3>
-
-                                    <p>User Registrations</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-person-add"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">More info <i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-danger">
-                                <div class="inner">
-                                    <h3>65</h3>
-
-                                    <p>Unique Visitors</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="ion ion-pie-graph"></i>
-                                </div>
-                                <a href="#" class="small-box-footer">More info <i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                    </div>
-                
-                </div>
-                <!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper --> --}}
 
 @endsection
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

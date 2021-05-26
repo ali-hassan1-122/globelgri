@@ -133,21 +133,5 @@
 							</div>
 						</div>
 					</section>
-					<!-- signupFormAside -->
-					{{-- <form action="#" class="bgWhite signupFormAside">
-						<div class="container signupFormAsideHolder">
-							<span class="icnAbsolute elemenBlock fi flaticon-message"></span>
-							<div class="col-xs-12 col-md-offset-2 col-md-6">
-								<h3 class="fontNeuron textSecondary">Sign up for our newsletter.</h3>
-								<p>Lorem molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-							</div>
-							<div class="col-xs-12 col-md-4">
-								<div class="form-group">
-									<input type="email" id="email" class="form-control elemenBlock" placeholder="Your email">
-									<button type="button" class="buttonReset fi flaticon-navigation"></button>
-								</div>
-							</div>
-						</div>
-					</form> --}}
 				</main>
 @endsection

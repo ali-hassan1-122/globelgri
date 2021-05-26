@@ -17119,7 +17119,7 @@ h6 a:active, .h6 a:hover, .h6 a:focus, .h6 a:active {
 }
 
 .addProperty .navSteps li.completed a:before {
-  background: #2f80ed;
+  background: #8b5925;
   content: "\f00c";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

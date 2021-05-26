@@ -15,11 +15,11 @@ class CreateGeneralSettingsTable extends Migration
     {
         Schema::create('general_settings', function (Blueprint $table) {
             $table->id();
-            $table->string('phone')->nullable();
-            $table->string('email')->nullable();
-            $table->text('address')->nullable();
-            $table->text('description')->nullable();
-            $table->string('logo')->nullable();
+            $table->string('phone')->default('0');
+            $table->string('email')->default('0');
+            $table->text('address')->default('0');
+            $table->text('description')->default('0');
+            $table->string('logo')->default('0');
             $table->timestamps();
         });
     }

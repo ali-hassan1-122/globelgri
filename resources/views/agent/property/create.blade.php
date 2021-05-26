@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Multistep Form In Jquery</title>
+    <title>Globelgri</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <?php
+                            <?php
                            $phone = '';
                             $email = '';
                             $address = '';
@@ -60,10 +60,10 @@
                                 <!-- logo -->
                                 @if ($logo)
                                 <div class="logo logoCentered"><a href="{{route('agent.dashboard')}}"><img
-                                            src="{{$logo}}" alt="LemanHouse"></a></div>
+                                            src="{{$logo}}" alt="LemanHouse" style="width: 150px;height:110px;margin-top:-16%"></a></div>
                                 @else
                                 <div class="logo logoCentered"><a href="{{route('agent.dashboard')}}"><img
-                                            src="{{asset('frontend/images/logo.png')}}" alt="LemanHouse"></a></div>
+                                            src="{{asset('frontend/images/logo5.png')}}" style="width: 150px;height:110px;margin-top:-16%" alt="LemanHouse"></a></div>
                                 @endif
 
                             </div>
@@ -81,10 +81,10 @@
 
                                 <div class="addProperty">
                                     <h1 class="fontNeuron">Add New Property</h1>
-                                    <ol class="navSteps">
-                                        <li class="current">
-                                            <a href="#">
-                                                <span class="text">Basic Info</span>
+                                    <ol class="navSteps" >
+                                        <li class="current" >
+                                            <a href="#" >
+                                                <span class="text" >Basic Info</span>
                                             </a>
                                         </li>
                                         <li>
@@ -97,11 +97,7 @@
                                                 <span class="text">Location</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="text">Amenities</span>
-                                            </a>
-                                        </li>
+                                     
                                         <li>
                                             <a href="#">
                                                 <span class="text">Private Notes</span>
@@ -113,7 +109,7 @@
                                             <h2 class="fontNeuron">Basic Info</h2>
                                             <div class="btnArea">
 
-                                                <a type="button" id="next1" class="btn btnDark next">Next <i
+                                                <a type="button" id="next1" class="btn  next" style="background-color: #8b5925; color:white;">Next <i
                                                         class="fi flaticon-arrows"></i></a>
 
                                             </div>
@@ -126,20 +122,14 @@
                                                         id="itemN-15">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-6">
+                                            <div class="col-xs-12 col-sm-8">
                                                 <div class="form-group">
                                                     <label for="itemN-16">Price</label>
                                                     <input type="text" name="price" class="form-control" placeholder="$158"
                                                         id="itemN-16">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="itemN-17">Price Postfix</label>
-                                                    <input type="text" name="price_postfix" class="form-control" placeholder=""
-                                                        id="itemN-17">
-                                                </div>
-                                            </div>
+                                         
                                             <div class="col-xs-12 col-sm-4">
                                                 <div class="form-group">
                                                     <label for="itemN-18">Bedrooms</label>
@@ -147,14 +137,14 @@
                                                         max="9999" id="itemN-18">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-4">
+                                            <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-19">Bathrooms</label>
                                                     <input type="number" name="bathroom" class="form-control" placeholder="3" min="0"
                                                         max="9999" id="itemN-19">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-4">
+                                            <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-20">Garages</label>
                                                     <input type="number" name="garages" class="form-control" placeholder="8" min="0"
@@ -168,13 +158,7 @@
                                                         id="itemN-21">
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="itemN-22">Area Postfix</label>
-                                                    <input type="text" name="area_postfix" class="form-control" placeholder=""
-                                                        id="itemN-22">
-                                                </div>
-                                            </div>
+                                    
                                             <div class="col-xs-12 col-sm-6">
                                                 <div class="form-group">
                                                     <label for="itemN-23">Property Type</label>
@@ -187,7 +171,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-6">
+                                            <div class="col-xs-12 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="itemN-24">Property Status</label>
                                                     <select data-placeholder="Select Option" class="chosen-select"
@@ -208,7 +192,7 @@
                                             </div>
                                         </div>
                                         <div class="btnArea">
-                                            <a type="button" id="next1" class="btn btnDark next">Next <i
+                                            <a type="button" id="next1" class="btn  next" style="background-color: #8b5925; color:white;">Next <i
                                                     class="fi flaticon-arrows"></i></a>
 
                                         </div>
@@ -239,11 +223,6 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="text">Amenities</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
                                                 <span class="text">Private Notes</span>
                                             </a>
                                         </li>
@@ -257,10 +236,46 @@
                                                 <a type="button" id="previous1" class="btn btn-lighter previous"><i
                                                         class="fi flaticon-arrows-1"></i> Back</a>
 
-                                                <a type="button" id="next2" class="btn btnDark next">Next <i
+                                                <a type="button" id="next2" class="btn  next" style="background-color: #8b5925; color:white;">Next <i
                                                         class="fi flaticon-arrows"></i></a>
                                             </div>
                                         </header>
+                                         <div class="galleryUploads">
+                                            <div class="titleArea">
+                                                <span class="title">Featured Image</span>
+                                            </div>
+                                            <div class="imageGallery">
+                                                <div class="image imageLoaded">
+                                                    <img src="https://via.placeholder.com/200x150" alt="" width="200"
+                                                        height="150">
+                                                        <input type="file" name="featured_photo" class="mt-3">
+                                                    <div class="btnsArea">
+                                                        <a href="#" class="link close"><i
+                                                                class="fa fa-window-close"></i></a>
+                                                        <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
+                                                    </div>
+                                                    <a href="#" class="text">
+                                                        <span>
+                                                            <i class="fi flaticon-cloud-computing"></i>
+                                                            <span>Upload Image</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="image">
+                                                    <div class="btnsArea">
+                                                        <a href="#" class="link close"><i
+                                                                class="fa fa-window-close"></i></a>
+                                                        <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
+                                                    </div>
+                                                    <a href="#" class="text">
+                                                        <span>
+                                                            <i class="fi flaticon-cloud-computing"></i>
+                                                            <span>Upload Image</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="galleryUploads">
                                             <div class="titleArea">
                                                 <span class="title">Photo Gallery</span>
@@ -377,69 +392,15 @@
                                                 </div>
                                             </div>
                                         </div> --}}
-                                        <div class="galleryUploads">
-                                            <div class="titleArea">
-                                                <span class="title">Floor Plans</span>
-                                            </div>
-                                            <div class="imageGallery">
-                                                <div class="image imageLoaded">
-                                                    <img src="https://via.placeholder.com/200x150" alt="" width="200"
-                                                        height="150">
-                                                        <input type="file" name="plane_photos[]" class="mt-3" multiple>
-                                                    <div class="btnsArea">
-                                                        <a href="#" class="link close"><i
-                                                                class="fa fa-window-close"></i></a>
-                                                        <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
-                                                    </div>
-                                                    <a href="#" class="text">
-                                                        <span>
-                                                            <i class="fi flaticon-cloud-computing"></i>
-                                                            <span>Upload Image</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div class="image">
-                                                    <div class="btnsArea">
-                                                        <a href="#" class="link close"><i
-                                                                class="fa fa-window-close"></i></a>
-                                                        <a href="#" class="link"><i class="fi flaticon-edit"></i></a>
-                                                    </div>
-                                                    <a href="#" class="text">
-                                                        <span>
-                                                            <i class="fi flaticon-cloud-computing"></i>
-                                                            <span>Upload Image</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12">
-                                                <div class="form-group">
-                                                    <label for="itemN-26">Property Video</label>
-                                                    <p>*Put URL from video sites like youtube, vimeo etc</p>
-                                                    <input type="text" name="property_video_url" class="form-control" placeholder="Video URL"
-                                                        id="itemN-26">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12">
-                                                <div class="form-group">
-                                                    <label for="itemN-27">360° Virtual Tour</label>
-                                                    <textarea class="form-control" placeholder="Embed Iframe code"
-                                                        id="itemN-27" name="virtual_tour"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="btnArea">
                                             <a type="button" id="previous1" class="btn btn-lighter previous"><i
                                                     class="fi flaticon-arrows-1"></i> Back</a>
-                                            <a type="button" id="next2" class="btn btnDark next">Next <i
+                                            <a type="button" id="next2" class="btn  next" style="background-color: #8b5925; color:white;">Next <i
                                                     class="fi flaticon-arrows"></i></a>
                                         </div>
 
                                     </div>
                                 </div>
-
 
 
                             </fieldset>
@@ -463,11 +424,7 @@
                                                 <span class="text">Location</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="text">Amenities</span>
-                                            </a>
-                                        </li>
+                        
                                         <li>
                                             <a href="#">
                                                 <span class="text">Private Notes</span>
@@ -481,11 +438,11 @@
                                             <div class="btnArea">
                                                 <a type="button" id="previous3" class="btn btn-lighter previous"><i
                                                         class="fi flaticon-arrows-1"></i> Back</a>
-                                                <a type="button" id="next3" class="btn btnDark next">Next <i
+                                                <a type="button" id="next3" class="btn next" style="background-color: #8b5925; color:white;">Next <i
                                                         class="fi flaticon-arrows"></i></a>
                                             </div>
                                         </header>
-                                        <div class="row">
+                                        {{-- <div class="row">
                                             <div class="col-xs-12">
                                                 <div class="form-group">
                                                     <label>Country</label>
@@ -531,7 +488,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="map-area mapPlacer">
                                             <div id="map-container">
                                                 <div id="map_div">&nbsp;</div>
@@ -540,18 +497,15 @@
                                         <div class="btnArea">
                                             <a type="button" id="previous3" class="btn btn-lighter previous"><i
                                                     class="fi flaticon-arrows-1"></i> Back</a>
-                                            <a type="button" id="next3" class="btn btnDark next">Next <i
+                                            <a type="button" id="next3" class="btn  next" style="background-color: #8b5925; color:white;">Next <i
                                                     class="fi flaticon-arrows"></i></a>
                                         </div>
 
                                     </div>
                                 </div>
-
-
-
                             </fieldset>
 
-                            <fieldset id="Amenities">
+                            <fieldset id="Private_Notes"> 
                                 <div class="addProperty">
                                     <h1 class="fontNeuron">Add New Property</h1>
                                     <ol class="navSteps">
@@ -570,233 +524,7 @@
                                                 <span class="text">Location</span>
                                             </a>
                                         </li>
-                                        <li class="current">
-                                            <a href="#">
-                                                <span class="text">Amenities</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="text">Private Notes</span>
-                                            </a>
-                                        </li>
-                                    </ol>
-                                    <div class="formContent">
-
-                                        <header class="contentHead">
-                                            <h2 class="fontNeuron">Amenities</h2>
-                                            <div class="btnArea">
-                                                <a type="button" id="previous4" class="btn btn-lighter previous"><i
-                                                        class="fi flaticon-arrows-1"></i> Back</a>
-                                                <a type="button" id="next4" class="btn btnDark next">Next <i
-                                                        class="fi flaticon-arrows"></i></a>
-                                            </div>
-                                        </header>
-                                        <ul class="list-unstyled checkList text-primary">
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="air_conditioning">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Air conditioning</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="heating">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Heating</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="air_conditioning1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Air conditioning</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="heating1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Heating</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset"  name="balcony">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Balcony</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset"  name="internet">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Internet</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset"  name="balcony1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Balcony</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset"  name="internet1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Internet</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="bedding1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Bedding</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="microwave">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Microwave</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="bedding2">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Bedding</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="microwave1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Microwave</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="cable_tv_1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Cable TV</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="oven">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Oven</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="cable_tv_2">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Cable TV</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="oven_1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Oven</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="coffee_pot">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Coffee Pot</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="toaster">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Toaster</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="coffee_pot_1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Coffee Pot</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="toaster_1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Toaster</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="dashwasher">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Dishwasher</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="parking">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Parking</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="dashwasher1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Dishwasher</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="fwNormal customLabelCheck">
-                                                    <input type="checkbox" class="customFormInputReset" name="parking1">
-                                                    <span class="fakeCheckbox"></span>
-                                                    <span class="fakeLabel">Parking</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                        <div class="btnArea">
-                                            <a type="button" id="previous4" class="btn btn-lighter previous"><i
-                                                    class="fi flaticon-arrows-1"></i> Back</a>
-                                            <a type="button" id="next4" class="btn btnDark next">Next <i
-                                                    class="fi flaticon-arrows"></i></a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <fieldset id="Private_Notes">
-                                <div class="addProperty">
-                                    <h1 class="fontNeuron">Add New Property</h1>
-                                    <ol class="navSteps">
-                                        <li class="completed">
-                                            <a href="#">
-                                                <span class="text">Basic Info</span>
-                                            </a>
-                                        </li>
-                                        <li class="completed">
-                                            <a href="#">
-                                                <span class="text">Photos &amp; EPC</span>
-                                            </a>
-                                        </li>
-                                        <li class="completed">
-                                            <a href="#">
-                                                <span class="text">Location</span>
-                                            </a>
-                                        </li>
-                                        <li class="completed">
-                                            <a href="#">
-                                                <span class="text">Amenities</span>
-                                            </a>
-                                        </li>
+                        
                                         <li class="current">
                                             <a href="#">
                                                 <span class="text">Private Notes</span>
@@ -818,34 +546,16 @@
                                             <div class="btnArea">
                                                 <a type="button" id="previous5" class="btn btn-lighter previous"><i
                                                         class="fi flaticon-arrows-1"></i> Back</a>
-                                                <button type="submit" class="btn btnDark">Submit Property <i
+                                                <button type="submit" class="btn" style="background-color: #8b5925; color:white;">Submit Property <i
                                                         class="fi flaticon-arrows"></i></button>
                                             </div>
                                         
                                     </div>
                                 </div>
-                            </fieldset>
+                           </fieldset>
 
                         </form>
                     </section>
-                    <!-- signupFormAside -->
-                    <form action="#" class="bgWhite signupFormAside">
-                        <div class="container signupFormAsideHolder">
-                            <span class="icnAbsolute elemenBlock fi flaticon-message"></span>
-                            <div class="col-xs-12 col-md-offset-2 col-md-6">
-                                <h3 class="fontNeuron textSecondary">Sign up for our newsletter.</h3>
-                                <p>Lorem molestie odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-md-4">
-                                <div class="form-group">
-                                    <input type="email" id="email" class="form-control elemenBlock"
-                                        placeholder="Your email">
-                                    <button type="button" class="buttonReset fi flaticon-navigation"></button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </main>
             </div>
 
@@ -865,21 +575,21 @@
                                 @endif
                                 <address>
                                     <dl>
-                                        <dt><i class="fi flaticon-navigation"></i></dt>
+                                        <dt><i class="fi flaticon-navigation" style="color: white"></i></dt>
                                         @if ($address)
                                         <dd>{{$address}}</dd>
                                         @else
                                         <dd>PO Box 16122 Collins Street West Victoria 8007 Australia</dd>
                                         @endif
 
-                                        <dt><i class="fi flaticon-24-hours"></i></dt>
+                                        <dt><i class="fi flaticon-24-hours" style="color: white"></i></dt>
                                         @if ($phone)
                                         <dd><a href="tel:+12463450695">{{$phone}}</a></dd>
                                         @else
                                         <dd><a href="tel:+12463450695">+111-222-333</a></dd>
                                         @endif
 
-                                        <dt><i class="fi flaticon-mail"></i></dt>
+                                        <dt><i class="fi flaticon-mail" style="color: white"></i></dt>
                                         @if ($email)
                                         <dd><a
                                                 href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#109;&#101;&#115;&#119;&#101;&#101;&#116;&#046;&#099;&#111;&#109;">{{$email}}</a>
@@ -903,12 +613,10 @@
                                         <li><a href="#">Privacy Policy</a></li>
                                         <li><a href="#">Contact Support</a></li>
                                         <li><a href="#">Careers</a></li>
-                                        <li><a href="#">FAQs</a></li>
+                                       
                                     </ul>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">FAQ</a></li>
+                                    <ul class="list-unstyled">              
                                         <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Our Agents</a></li>
                                         <li><a href="#">How It Works</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
@@ -921,24 +629,24 @@
                                     <li>
                                         <div class="alignleft">
                                             <a href="#">
-                                                <img src="https://via.placeholder.com/90x70" alt="image description">
+                                                <img src="{{asset('frontend/images/3.jpg')}}" alt="image description">
                                             </a>
                                         </div>
                                         <div class="descrWrap">
                                             <h3 class="fwNormal"><a href="#">Do what you love and tomorrow will pay</a>
                                             </h3>
-                                            <h4 class="fwSemi">$ 1,27,000</h4>
+                                            <h4 class="fwSemi" style="color: white">$ 1,27,000</h4>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="alignleft">
                                             <a href="#">
-                                                <img src="https://via.placeholder.com/90x70" alt="image description">
+                                                <img src="{{asset('frontend/images/5.jpg')}}" alt="image description">
                                             </a>
                                         </div>
                                         <div class="descrWrap">
                                             <h3 class="fwNormal"><a href="#">We’re ready for the TRID rules!</a></h3>
-                                            <h4 class="fwSemi">$ 527,000</h4>
+                                            <h4 class="fwSemi" style="color: white">$ 527,000</h4>
                                         </div>
                                     </li>
                                 </ul>
@@ -954,16 +662,16 @@
                             <div class="col-xs-12 col-sm-push-6 col-sm-6">
                                 <!-- pageFooterSocial -->
                                 <ul class="socialNetworks list-unstyled pageFooterSocial">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f" style="color: white"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter" style="color: white"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram" style="color: white"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest" style="color: white" ></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble" style="color: white"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google" style="color: white"></i></a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-12 col-sm-pull-6 col-sm-6">
-                                <p>2021 <a href="#">globelgri</a> - All rights reserved</p>
+                                <p style="color: white">2021 <a href="#">globelgri</a> - All rights reserved</p>
                             </div>
                         </div>
                     </div>
@@ -1006,7 +714,6 @@
                 let previous = $('#' + this.id).closest('fieldset').prev('fieldset').attr('id');
                 $('#' + previous).show();
                 $('#' + current).hide();
-
 
             });
 
